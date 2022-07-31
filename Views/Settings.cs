@@ -332,5 +332,21 @@ namespace FallGuysStats {
         private void chkCycleWinFinalStreak_CheckedChanged(object sender, EventArgs e) {
 
         }
+
+        private void lblWinsFilter_Click(object sender, EventArgs e) {
+
+        }
+
+        private void chkIgnoreLevelTypeWhenSorting_CheckedChanged(object sender, EventArgs e) {
+
+        }
+
+        private void lblQualifyFilter_Click(object sender, EventArgs e) {
+
+        }
+
+        private void lblPreviousWins_Click(object sender, EventArgs e) {
+
+        }
     }
 }
