@@ -3,7 +3,7 @@
 翻訳の間違いがあるかもしれません。
 不具合や翻訳ミスなどがあれば@sehatakuroのツイッターに連絡してください。
 ## ダウンロード
-  - [FallGuyStatsJP.zip](https://raw.githubusercontent.com/sehatakuro/FallGuysStatsJP/master/FallGuyStatsJP.zip)
+  - [FallGuyStatsJP.zip](https://github.com/SehataKuro/FallGuysStatsJP/raw/master/FallGuysStatsJP.zip)
 
 
 
