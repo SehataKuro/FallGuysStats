@@ -312,5 +312,25 @@ namespace FallGuysStats {
             lblOverlayFontExample.Font = defaultFont;
             overlayFontSerialized = string.Empty;
         }
+
+        private void lblLogPath_Click(object sender, EventArgs e) {
+
+        }
+
+        private void lblLogPathNote_Click(object sender, EventArgs e) {
+
+        }
+
+        private void grpStats_Enter(object sender, EventArgs e) {
+
+        }
+
+        private void chkOnlyShowFinalStreak_CheckedChanged(object sender, EventArgs e) {
+
+        }
+
+        private void chkCycleWinFinalStreak_CheckedChanged(object sender, EventArgs e) {
+
+        }
     }
 }

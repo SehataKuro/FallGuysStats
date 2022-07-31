@@ -1,3 +1,11 @@
+# 日本語版Fall Guys Stats
+設定画面やオーバーレイに表示される言語を日本語に翻訳しました。
+翻訳の間違いがあるかもしれません。
+
+
+
+
+
 # Fall Guys Stats
 Simple program to generate stats for the game Fall Guys. Reads the games log file to track how you are doing.
 

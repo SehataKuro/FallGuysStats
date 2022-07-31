@@ -96,41 +96,42 @@
             // lblLogPath
             // 
             this.lblLogPath.AutoSize = true;
-            this.lblLogPath.Location = new System.Drawing.Point(8, 15);
+            this.lblLogPath.Location = new System.Drawing.Point(8, 14);
             this.lblLogPath.Name = "lblLogPath";
-            this.lblLogPath.Size = new System.Drawing.Size(50, 13);
+            this.lblLogPath.Size = new System.Drawing.Size(52, 12);
             this.lblLogPath.TabIndex = 0;
-            this.lblLogPath.Text = "Log Path";
+            this.lblLogPath.Text = "ログのパス";
+            this.lblLogPath.Click += new System.EventHandler(this.lblLogPath_Click);
             // 
             // lblLogPathNote
             // 
             this.lblLogPathNote.AutoSize = true;
             this.lblLogPathNote.ForeColor = System.Drawing.Color.DimGray;
-            this.lblLogPathNote.Location = new System.Drawing.Point(61, 35);
+            this.lblLogPathNote.Location = new System.Drawing.Point(61, 32);
             this.lblLogPathNote.Name = "lblLogPathNote";
-            this.lblLogPathNote.Size = new System.Drawing.Size(458, 13);
+            this.lblLogPathNote.Size = new System.Drawing.Size(465, 12);
             this.lblLogPathNote.TabIndex = 2;
-            this.lblLogPathNote.Text = "* You should not need to set this. Only use when the program is not reading the c" +
-    "orrect location.";
+            this.lblLogPathNote.Text = "* 設定する必要はありません。プログラムが正しい位置を読み込んでいない場合にのみ使用します。";
+            this.lblLogPathNote.Click += new System.EventHandler(this.lblLogPathNote_Click);
             // 
             // txtLogPath
             // 
             this.txtLogPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLogPath.Location = new System.Drawing.Point(64, 12);
+            this.txtLogPath.Location = new System.Drawing.Point(64, 11);
             this.txtLogPath.Name = "txtLogPath";
-            this.txtLogPath.Size = new System.Drawing.Size(593, 20);
+            this.txtLogPath.Size = new System.Drawing.Size(593, 19);
             this.txtLogPath.TabIndex = 1;
             this.txtLogPath.Validating += new System.ComponentModel.CancelEventHandler(this.txtLogPath_Validating);
             // 
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(500, 596);
+            this.btnSave.Location = new System.Drawing.Point(500, 550);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(75, 21);
             this.btnSave.TabIndex = 7;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "保存";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -162,12 +163,12 @@
             this.grpOverlay.Controls.Add(this.btnSelectFont);
             this.grpOverlay.Controls.Add(this.btnResetOverlayFont);
             this.grpOverlay.Controls.Add(this.grpOverlayFontExample);
-            this.grpOverlay.Location = new System.Drawing.Point(12, 115);
+            this.grpOverlay.Location = new System.Drawing.Point(12, 106);
             this.grpOverlay.Name = "grpOverlay";
-            this.grpOverlay.Size = new System.Drawing.Size(645, 352);
+            this.grpOverlay.Size = new System.Drawing.Size(645, 325);
             this.grpOverlay.TabIndex = 4;
             this.grpOverlay.TabStop = false;
-            this.grpOverlay.Text = "Overlay";
+            this.grpOverlay.Text = "オーバーレイ";
             // 
             // grpCycleQualifyGold
             // 
@@ -176,44 +177,44 @@
             this.grpCycleQualifyGold.Controls.Add(this.chkOnlyShowGold);
             this.grpCycleQualifyGold.Controls.Add(this.chkOnlyShowQualify);
             this.grpCycleQualifyGold.Controls.Add(this.chkCycleQualifyGold);
-            this.grpCycleQualifyGold.Location = new System.Drawing.Point(12, 171);
+            this.grpCycleQualifyGold.Location = new System.Drawing.Point(12, 158);
             this.grpCycleQualifyGold.Margin = new System.Windows.Forms.Padding(0);
             this.grpCycleQualifyGold.Name = "grpCycleQualifyGold";
             this.grpCycleQualifyGold.Padding = new System.Windows.Forms.Padding(2);
-            this.grpCycleQualifyGold.Size = new System.Drawing.Size(369, 32);
+            this.grpCycleQualifyGold.Size = new System.Drawing.Size(369, 30);
             this.grpCycleQualifyGold.TabIndex = 8;
             this.grpCycleQualifyGold.TabStop = false;
             // 
             // chkOnlyShowGold
             // 
             this.chkOnlyShowGold.AutoSize = true;
-            this.chkOnlyShowGold.Location = new System.Drawing.Point(259, 10);
+            this.chkOnlyShowGold.Location = new System.Drawing.Point(259, 9);
             this.chkOnlyShowGold.Name = "chkOnlyShowGold";
-            this.chkOnlyShowGold.Size = new System.Drawing.Size(71, 17);
+            this.chkOnlyShowGold.Size = new System.Drawing.Size(82, 16);
             this.chkOnlyShowGold.TabIndex = 2;
-            this.chkOnlyShowGold.Text = "Gold Only";
+            this.chkOnlyShowGold.Text = "ゴールドのみ";
             this.chkOnlyShowGold.UseVisualStyleBackColor = true;
             // 
             // chkOnlyShowQualify
             // 
             this.chkOnlyShowQualify.AutoSize = true;
-            this.chkOnlyShowQualify.Location = new System.Drawing.Point(151, 10);
+            this.chkOnlyShowQualify.Location = new System.Drawing.Point(151, 9);
             this.chkOnlyShowQualify.Name = "chkOnlyShowQualify";
-            this.chkOnlyShowQualify.Size = new System.Drawing.Size(81, 17);
+            this.chkOnlyShowQualify.Size = new System.Drawing.Size(68, 16);
             this.chkOnlyShowQualify.TabIndex = 1;
-            this.chkOnlyShowQualify.Text = "Qualify Only";
+            this.chkOnlyShowQualify.Text = "クリアのみ";
             this.chkOnlyShowQualify.UseVisualStyleBackColor = true;
             // 
             // chkCycleQualifyGold
             // 
             this.chkCycleQualifyGold.AutoSize = true;
             this.chkCycleQualifyGold.Checked = true;
-            this.chkCycleQualifyGold.Location = new System.Drawing.Point(5, 10);
+            this.chkCycleQualifyGold.Location = new System.Drawing.Point(5, 9);
             this.chkCycleQualifyGold.Name = "chkCycleQualifyGold";
-            this.chkCycleQualifyGold.Size = new System.Drawing.Size(119, 17);
+            this.chkCycleQualifyGold.Size = new System.Drawing.Size(139, 16);
             this.chkCycleQualifyGold.TabIndex = 0;
             this.chkCycleQualifyGold.TabStop = true;
-            this.chkCycleQualifyGold.Text = "Cycle Qualify / Gold";
+            this.chkCycleQualifyGold.Text = "周期的 クリア / ゴールド";
             this.chkCycleQualifyGold.UseVisualStyleBackColor = true;
             // 
             // grpCycleFastestLongest
@@ -223,52 +224,52 @@
             this.grpCycleFastestLongest.Controls.Add(this.chkOnlyShowLongest);
             this.grpCycleFastestLongest.Controls.Add(this.chkOnlyShowFastest);
             this.grpCycleFastestLongest.Controls.Add(this.chkCycleFastestLongest);
-            this.grpCycleFastestLongest.Location = new System.Drawing.Point(12, 196);
+            this.grpCycleFastestLongest.Location = new System.Drawing.Point(12, 181);
             this.grpCycleFastestLongest.Margin = new System.Windows.Forms.Padding(0);
             this.grpCycleFastestLongest.Name = "grpCycleFastestLongest";
             this.grpCycleFastestLongest.Padding = new System.Windows.Forms.Padding(2);
-            this.grpCycleFastestLongest.Size = new System.Drawing.Size(369, 32);
+            this.grpCycleFastestLongest.Size = new System.Drawing.Size(369, 30);
             this.grpCycleFastestLongest.TabIndex = 9;
             this.grpCycleFastestLongest.TabStop = false;
             // 
             // chkOnlyShowLongest
             // 
             this.chkOnlyShowLongest.AutoSize = true;
-            this.chkOnlyShowLongest.Location = new System.Drawing.Point(259, 10);
+            this.chkOnlyShowLongest.Location = new System.Drawing.Point(259, 9);
             this.chkOnlyShowLongest.Name = "chkOnlyShowLongest";
-            this.chkOnlyShowLongest.Size = new System.Drawing.Size(87, 17);
+            this.chkOnlyShowLongest.Size = new System.Drawing.Size(68, 16);
             this.chkOnlyShowLongest.TabIndex = 2;
-            this.chkOnlyShowLongest.Text = "Longest Only";
+            this.chkOnlyShowLongest.Text = "最遅のみ";
             this.chkOnlyShowLongest.UseVisualStyleBackColor = true;
             // 
             // chkOnlyShowFastest
             // 
             this.chkOnlyShowFastest.AutoSize = true;
-            this.chkOnlyShowFastest.Location = new System.Drawing.Point(151, 10);
+            this.chkOnlyShowFastest.Location = new System.Drawing.Point(151, 9);
             this.chkOnlyShowFastest.Name = "chkOnlyShowFastest";
-            this.chkOnlyShowFastest.Size = new System.Drawing.Size(83, 17);
+            this.chkOnlyShowFastest.Size = new System.Drawing.Size(68, 16);
             this.chkOnlyShowFastest.TabIndex = 1;
-            this.chkOnlyShowFastest.Text = "Fastest Only";
+            this.chkOnlyShowFastest.Text = "最速のみ";
             this.chkOnlyShowFastest.UseVisualStyleBackColor = true;
             // 
             // chkCycleFastestLongest
             // 
             this.chkCycleFastestLongest.AutoSize = true;
             this.chkCycleFastestLongest.Checked = true;
-            this.chkCycleFastestLongest.Location = new System.Drawing.Point(5, 10);
+            this.chkCycleFastestLongest.Location = new System.Drawing.Point(5, 9);
             this.chkCycleFastestLongest.Name = "chkCycleFastestLongest";
-            this.chkCycleFastestLongest.Size = new System.Drawing.Size(137, 17);
+            this.chkCycleFastestLongest.Size = new System.Drawing.Size(125, 16);
             this.chkCycleFastestLongest.TabIndex = 0;
             this.chkCycleFastestLongest.TabStop = true;
-            this.chkCycleFastestLongest.Text = "Cycle Fastest / Longest";
+            this.chkCycleFastestLongest.Text = "周期的 最速 / 最遅";
             this.chkCycleFastestLongest.UseVisualStyleBackColor = true;
             // 
             // chkHidePercentages
             // 
             this.chkHidePercentages.AutoSize = true;
-            this.chkHidePercentages.Location = new System.Drawing.Point(16, 90);
+            this.chkHidePercentages.Location = new System.Drawing.Point(16, 83);
             this.chkHidePercentages.Name = "chkHidePercentages";
-            this.chkHidePercentages.Size = new System.Drawing.Size(111, 17);
+            this.chkHidePercentages.Size = new System.Drawing.Size(114, 16);
             this.chkHidePercentages.TabIndex = 3;
             this.chkHidePercentages.Text = "Hide Percentages";
             this.chkHidePercentages.UseVisualStyleBackColor = true;
@@ -276,9 +277,9 @@
             // chkHideWinsInfo
             // 
             this.chkHideWinsInfo.AutoSize = true;
-            this.chkHideWinsInfo.Location = new System.Drawing.Point(16, 21);
+            this.chkHideWinsInfo.Location = new System.Drawing.Point(16, 19);
             this.chkHideWinsInfo.Name = "chkHideWinsInfo";
-            this.chkHideWinsInfo.Size = new System.Drawing.Size(95, 17);
+            this.chkHideWinsInfo.Size = new System.Drawing.Size(98, 16);
             this.chkHideWinsInfo.TabIndex = 0;
             this.chkHideWinsInfo.Text = "Hide Wins info";
             this.chkHideWinsInfo.UseVisualStyleBackColor = true;
@@ -288,42 +289,42 @@
             this.cboOverlayColor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboOverlayColor.FormattingEnabled = true;
             this.cboOverlayColor.Items.AddRange(new object[] {
-            "Transparent",
-            "Magenta",
-            "Red",
-            "Green",
-            "Blue",
-            "Black"});
-            this.cboOverlayColor.Location = new System.Drawing.Point(447, 150);
+            "透過",
+            "マゼンタ",
+            "赤",
+            "緑",
+            "青",
+            "黒"});
+            this.cboOverlayColor.Location = new System.Drawing.Point(447, 138);
             this.cboOverlayColor.Name = "cboOverlayColor";
-            this.cboOverlayColor.Size = new System.Drawing.Size(183, 21);
+            this.cboOverlayColor.Size = new System.Drawing.Size(183, 20);
             this.cboOverlayColor.TabIndex = 19;
             // 
             // lblOverlayColor
             // 
             this.lblOverlayColor.AutoSize = true;
-            this.lblOverlayColor.Location = new System.Drawing.Point(376, 153);
+            this.lblOverlayColor.Location = new System.Drawing.Point(400, 141);
             this.lblOverlayColor.Name = "lblOverlayColor";
-            this.lblOverlayColor.Size = new System.Drawing.Size(65, 13);
+            this.lblOverlayColor.Size = new System.Drawing.Size(41, 12);
             this.lblOverlayColor.TabIndex = 18;
-            this.lblOverlayColor.Text = "Background";
+            this.lblOverlayColor.Text = "背景色";
             // 
             // chkFlipped
             // 
             this.chkFlipped.AutoSize = true;
-            this.chkFlipped.Location = new System.Drawing.Point(447, 181);
+            this.chkFlipped.Location = new System.Drawing.Point(447, 167);
             this.chkFlipped.Name = "chkFlipped";
-            this.chkFlipped.Size = new System.Drawing.Size(132, 17);
+            this.chkFlipped.Size = new System.Drawing.Size(182, 16);
             this.chkFlipped.TabIndex = 20;
-            this.chkFlipped.Text = "Flip display horizontally";
+            this.chkFlipped.Text = "ディスプレイを横方向に反転させる";
             this.chkFlipped.UseVisualStyleBackColor = true;
             // 
             // chkShowTabs
             // 
             this.chkShowTabs.AutoSize = true;
-            this.chkShowTabs.Location = new System.Drawing.Point(16, 113);
+            this.chkShowTabs.Location = new System.Drawing.Point(16, 104);
             this.chkShowTabs.Name = "chkShowTabs";
-            this.chkShowTabs.Size = new System.Drawing.Size(148, 17);
+            this.chkShowTabs.Size = new System.Drawing.Size(160, 16);
             this.chkShowTabs.TabIndex = 4;
             this.chkShowTabs.Text = "Show Tab for current filter";
             this.chkShowTabs.UseVisualStyleBackColor = true;
@@ -331,9 +332,9 @@
             // chkHideTimeInfo
             // 
             this.chkHideTimeInfo.AutoSize = true;
-            this.chkHideTimeInfo.Location = new System.Drawing.Point(16, 67);
+            this.chkHideTimeInfo.Location = new System.Drawing.Point(16, 62);
             this.chkHideTimeInfo.Name = "chkHideTimeInfo";
-            this.chkHideTimeInfo.Size = new System.Drawing.Size(94, 17);
+            this.chkHideTimeInfo.Size = new System.Drawing.Size(99, 16);
             this.chkHideTimeInfo.TabIndex = 2;
             this.chkHideTimeInfo.Text = "Hide Time info";
             this.chkHideTimeInfo.UseVisualStyleBackColor = true;
@@ -341,9 +342,9 @@
             // chkHideRoundInfo
             // 
             this.chkHideRoundInfo.AutoSize = true;
-            this.chkHideRoundInfo.Location = new System.Drawing.Point(16, 44);
+            this.chkHideRoundInfo.Location = new System.Drawing.Point(16, 41);
             this.chkHideRoundInfo.Name = "chkHideRoundInfo";
-            this.chkHideRoundInfo.Size = new System.Drawing.Size(103, 17);
+            this.chkHideRoundInfo.Size = new System.Drawing.Size(106, 16);
             this.chkHideRoundInfo.TabIndex = 1;
             this.chkHideRoundInfo.Text = "Hide Round info";
             this.chkHideRoundInfo.UseVisualStyleBackColor = true;
@@ -353,23 +354,23 @@
             this.cboFastestFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboFastestFilter.FormattingEnabled = true;
             this.cboFastestFilter.Items.AddRange(new object[] {
-            "All Time Stats",
-            "Stats and Party Filter",
-            "Season Stats",
-            "Week Stats",
-            "Day Stats",
-            "Session Stats"});
-            this.cboFastestFilter.Location = new System.Drawing.Point(447, 69);
+            "すべての期間",
+            "パーティー",
+            "シーズン",
+            "1週間",
+            "1日",
+            "セッション"});
+            this.cboFastestFilter.Location = new System.Drawing.Point(447, 64);
             this.cboFastestFilter.Name = "cboFastestFilter";
-            this.cboFastestFilter.Size = new System.Drawing.Size(183, 21);
+            this.cboFastestFilter.Size = new System.Drawing.Size(183, 20);
             this.cboFastestFilter.TabIndex = 17;
             // 
             // lblFastestFilter
             // 
             this.lblFastestFilter.AutoSize = true;
-            this.lblFastestFilter.Location = new System.Drawing.Point(326, 72);
+            this.lblFastestFilter.Location = new System.Drawing.Point(326, 66);
             this.lblFastestFilter.Name = "lblFastestFilter";
-            this.lblFastestFilter.Size = new System.Drawing.Size(115, 13);
+            this.lblFastestFilter.Size = new System.Drawing.Size(129, 12);
             this.lblFastestFilter.TabIndex = 16;
             this.lblFastestFilter.Text = "Fastest / Longest Filter";
             // 
@@ -378,23 +379,23 @@
             this.cboQualifyFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboQualifyFilter.FormattingEnabled = true;
             this.cboQualifyFilter.Items.AddRange(new object[] {
-            "All Time Stats",
-            "Stats and Party Filter",
-            "Season Stats",
-            "Week Stats",
-            "Day Stats",
-            "Session Stats"});
-            this.cboQualifyFilter.Location = new System.Drawing.Point(447, 44);
+            "すべての期間",
+            "パーティー",
+            "シーズン",
+            "1週間",
+            "1日",
+            "セッション"});
+            this.cboQualifyFilter.Location = new System.Drawing.Point(447, 41);
             this.cboQualifyFilter.Name = "cboQualifyFilter";
-            this.cboQualifyFilter.Size = new System.Drawing.Size(183, 21);
+            this.cboQualifyFilter.Size = new System.Drawing.Size(183, 20);
             this.cboQualifyFilter.TabIndex = 15;
             // 
             // lblQualifyFilter
             // 
             this.lblQualifyFilter.AutoSize = true;
-            this.lblQualifyFilter.Location = new System.Drawing.Point(344, 47);
+            this.lblQualifyFilter.Location = new System.Drawing.Point(344, 43);
             this.lblQualifyFilter.Name = "lblQualifyFilter";
-            this.lblQualifyFilter.Size = new System.Drawing.Size(97, 13);
+            this.lblQualifyFilter.Size = new System.Drawing.Size(109, 12);
             this.lblQualifyFilter.TabIndex = 14;
             this.lblQualifyFilter.Text = "Qualify / Gold Filter";
             // 
@@ -403,60 +404,60 @@
             this.cboWinsFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboWinsFilter.FormattingEnabled = true;
             this.cboWinsFilter.Items.AddRange(new object[] {
-            "All Time Stats",
-            "Stats and Party Filter",
-            "Season Stats",
-            "Week Stats",
-            "Day Stats",
-            "Session Stats"});
-            this.cboWinsFilter.Location = new System.Drawing.Point(447, 19);
+            "すべての期間",
+            "パーティー",
+            "シーズン",
+            "1週間",
+            "1日",
+            "セッション"});
+            this.cboWinsFilter.Location = new System.Drawing.Point(447, 18);
             this.cboWinsFilter.Name = "cboWinsFilter";
-            this.cboWinsFilter.Size = new System.Drawing.Size(183, 21);
+            this.cboWinsFilter.Size = new System.Drawing.Size(183, 20);
             this.cboWinsFilter.TabIndex = 13;
             // 
             // lblWinsFilter
             // 
             this.lblWinsFilter.AutoSize = true;
-            this.lblWinsFilter.Location = new System.Drawing.Point(352, 22);
+            this.lblWinsFilter.Location = new System.Drawing.Point(352, 20);
             this.lblWinsFilter.Name = "lblWinsFilter";
-            this.lblWinsFilter.Size = new System.Drawing.Size(89, 13);
+            this.lblWinsFilter.Size = new System.Drawing.Size(99, 12);
             this.lblWinsFilter.TabIndex = 12;
             this.lblWinsFilter.Text = "Wins / Final Filter";
             // 
             // chkOverlayOnTop
             // 
             this.chkOverlayOnTop.AutoSize = true;
-            this.chkOverlayOnTop.Location = new System.Drawing.Point(447, 204);
+            this.chkOverlayOnTop.Location = new System.Drawing.Point(447, 188);
             this.chkOverlayOnTop.Name = "chkOverlayOnTop";
-            this.chkOverlayOnTop.Size = new System.Drawing.Size(120, 17);
+            this.chkOverlayOnTop.Size = new System.Drawing.Size(121, 16);
             this.chkOverlayOnTop.TabIndex = 21;
-            this.chkOverlayOnTop.Text = "Always show on top";
+            this.chkOverlayOnTop.Text = "常に手前に表示する";
             this.chkOverlayOnTop.UseVisualStyleBackColor = true;
             // 
             // lblCycleTimeSecondsTag
             // 
             this.lblCycleTimeSecondsTag.AutoSize = true;
-            this.lblCycleTimeSecondsTag.Location = new System.Drawing.Point(125, 151);
+            this.lblCycleTimeSecondsTag.Location = new System.Drawing.Point(125, 139);
             this.lblCycleTimeSecondsTag.Name = "lblCycleTimeSecondsTag";
-            this.lblCycleTimeSecondsTag.Size = new System.Drawing.Size(24, 13);
+            this.lblCycleTimeSecondsTag.Size = new System.Drawing.Size(23, 12);
             this.lblCycleTimeSecondsTag.TabIndex = 7;
             this.lblCycleTimeSecondsTag.Text = "sec";
             // 
             // lblCycleTimeSeconds
             // 
             this.lblCycleTimeSeconds.AutoSize = true;
-            this.lblCycleTimeSeconds.Location = new System.Drawing.Point(19, 151);
+            this.lblCycleTimeSeconds.Location = new System.Drawing.Point(19, 139);
             this.lblCycleTimeSeconds.Name = "lblCycleTimeSeconds";
-            this.lblCycleTimeSeconds.Size = new System.Drawing.Size(59, 13);
+            this.lblCycleTimeSeconds.Size = new System.Drawing.Size(29, 12);
             this.lblCycleTimeSeconds.TabIndex = 5;
-            this.lblCycleTimeSeconds.Text = "Cycle Time";
+            this.lblCycleTimeSeconds.Text = "周期";
             // 
             // txtCycleTimeSeconds
             // 
-            this.txtCycleTimeSeconds.Location = new System.Drawing.Point(84, 148);
+            this.txtCycleTimeSeconds.Location = new System.Drawing.Point(84, 137);
             this.txtCycleTimeSeconds.MaxLength = 2;
             this.txtCycleTimeSeconds.Name = "txtCycleTimeSeconds";
-            this.txtCycleTimeSeconds.Size = new System.Drawing.Size(35, 20);
+            this.txtCycleTimeSeconds.Size = new System.Drawing.Size(35, 19);
             this.txtCycleTimeSeconds.TabIndex = 6;
             this.txtCycleTimeSeconds.Text = "5";
             this.txtCycleTimeSeconds.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -469,45 +470,47 @@
             this.grpCycleWinFinalStreak.Controls.Add(this.chkOnlyShowFinalStreak);
             this.grpCycleWinFinalStreak.Controls.Add(this.chkOnlyShowWinStreak);
             this.grpCycleWinFinalStreak.Controls.Add(this.chkCycleWinFinalStreak);
-            this.grpCycleWinFinalStreak.Location = new System.Drawing.Point(12, 221);
+            this.grpCycleWinFinalStreak.Location = new System.Drawing.Point(12, 204);
             this.grpCycleWinFinalStreak.Margin = new System.Windows.Forms.Padding(0);
             this.grpCycleWinFinalStreak.Name = "grpCycleWinFinalStreak";
             this.grpCycleWinFinalStreak.Padding = new System.Windows.Forms.Padding(2);
-            this.grpCycleWinFinalStreak.Size = new System.Drawing.Size(369, 32);
+            this.grpCycleWinFinalStreak.Size = new System.Drawing.Size(369, 30);
             this.grpCycleWinFinalStreak.TabIndex = 10;
             this.grpCycleWinFinalStreak.TabStop = false;
             // 
             // chkOnlyShowFinalStreak
             // 
             this.chkOnlyShowFinalStreak.AutoSize = true;
-            this.chkOnlyShowFinalStreak.Location = new System.Drawing.Point(259, 10);
+            this.chkOnlyShowFinalStreak.Location = new System.Drawing.Point(259, 9);
             this.chkOnlyShowFinalStreak.Name = "chkOnlyShowFinalStreak";
-            this.chkOnlyShowFinalStreak.Size = new System.Drawing.Size(105, 17);
+            this.chkOnlyShowFinalStreak.Size = new System.Drawing.Size(112, 16);
             this.chkOnlyShowFinalStreak.TabIndex = 2;
-            this.chkOnlyShowFinalStreak.Text = "Final Streak Only";
+            this.chkOnlyShowFinalStreak.Text = "連続ファイナルのみ";
             this.chkOnlyShowFinalStreak.UseVisualStyleBackColor = true;
+            this.chkOnlyShowFinalStreak.CheckedChanged += new System.EventHandler(this.chkOnlyShowFinalStreak_CheckedChanged);
             // 
             // chkOnlyShowWinStreak
             // 
             this.chkOnlyShowWinStreak.AutoSize = true;
-            this.chkOnlyShowWinStreak.Location = new System.Drawing.Point(151, 10);
+            this.chkOnlyShowWinStreak.Location = new System.Drawing.Point(151, 9);
             this.chkOnlyShowWinStreak.Name = "chkOnlyShowWinStreak";
-            this.chkOnlyShowWinStreak.Size = new System.Drawing.Size(102, 17);
+            this.chkOnlyShowWinStreak.Size = new System.Drawing.Size(68, 16);
             this.chkOnlyShowWinStreak.TabIndex = 1;
-            this.chkOnlyShowWinStreak.Text = "Win Streak Only";
+            this.chkOnlyShowWinStreak.Text = "連勝のみ";
             this.chkOnlyShowWinStreak.UseVisualStyleBackColor = true;
             // 
             // chkCycleWinFinalStreak
             // 
             this.chkCycleWinFinalStreak.AutoSize = true;
             this.chkCycleWinFinalStreak.Checked = true;
-            this.chkCycleWinFinalStreak.Location = new System.Drawing.Point(5, 10);
+            this.chkCycleWinFinalStreak.Location = new System.Drawing.Point(5, 9);
             this.chkCycleWinFinalStreak.Name = "chkCycleWinFinalStreak";
-            this.chkCycleWinFinalStreak.Size = new System.Drawing.Size(140, 17);
+            this.chkCycleWinFinalStreak.Size = new System.Drawing.Size(169, 16);
             this.chkCycleWinFinalStreak.TabIndex = 0;
             this.chkCycleWinFinalStreak.TabStop = true;
-            this.chkCycleWinFinalStreak.Text = "Cycle Win / Final Streak";
+            this.chkCycleWinFinalStreak.Text = "周期的 連勝 / 連続ファイナル";
             this.chkCycleWinFinalStreak.UseVisualStyleBackColor = true;
+            this.chkCycleWinFinalStreak.CheckedChanged += new System.EventHandler(this.chkCycleWinFinalStreak_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -516,95 +519,95 @@
             this.groupBox1.Controls.Add(this.chkOnlyShowPing);
             this.groupBox1.Controls.Add(this.chkOnlyShowPlayers);
             this.groupBox1.Controls.Add(this.chkCyclePlayersPing);
-            this.groupBox1.Location = new System.Drawing.Point(12, 246);
+            this.groupBox1.Location = new System.Drawing.Point(12, 227);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(369, 32);
+            this.groupBox1.Size = new System.Drawing.Size(369, 30);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             // 
             // chkOnlyShowPing
             // 
             this.chkOnlyShowPing.AutoSize = true;
-            this.chkOnlyShowPing.Location = new System.Drawing.Point(259, 10);
+            this.chkOnlyShowPing.Location = new System.Drawing.Point(259, 9);
             this.chkOnlyShowPing.Name = "chkOnlyShowPing";
-            this.chkOnlyShowPing.Size = new System.Drawing.Size(70, 17);
+            this.chkOnlyShowPing.Size = new System.Drawing.Size(66, 16);
             this.chkOnlyShowPing.TabIndex = 2;
-            this.chkOnlyShowPing.Text = "Ping Only";
+            this.chkOnlyShowPing.Text = "Pingのみ";
             this.chkOnlyShowPing.UseVisualStyleBackColor = true;
             // 
             // chkOnlyShowPlayers
             // 
             this.chkOnlyShowPlayers.AutoSize = true;
-            this.chkOnlyShowPlayers.Location = new System.Drawing.Point(151, 10);
+            this.chkOnlyShowPlayers.Location = new System.Drawing.Point(151, 9);
             this.chkOnlyShowPlayers.Name = "chkOnlyShowPlayers";
-            this.chkOnlyShowPlayers.Size = new System.Drawing.Size(83, 17);
+            this.chkOnlyShowPlayers.Size = new System.Drawing.Size(103, 16);
             this.chkOnlyShowPlayers.TabIndex = 1;
-            this.chkOnlyShowPlayers.Text = "Players Only";
+            this.chkOnlyShowPlayers.Text = "プレイヤー数のみ";
             this.chkOnlyShowPlayers.UseVisualStyleBackColor = true;
             // 
             // chkCyclePlayersPing
             // 
             this.chkCyclePlayersPing.AutoSize = true;
             this.chkCyclePlayersPing.Checked = true;
-            this.chkCyclePlayersPing.Location = new System.Drawing.Point(5, 10);
+            this.chkCyclePlayersPing.Location = new System.Drawing.Point(5, 9);
             this.chkCyclePlayersPing.Name = "chkCyclePlayersPing";
-            this.chkCyclePlayersPing.Size = new System.Drawing.Size(120, 17);
+            this.chkCyclePlayersPing.Size = new System.Drawing.Size(158, 16);
             this.chkCyclePlayersPing.TabIndex = 0;
             this.chkCyclePlayersPing.TabStop = true;
-            this.chkCyclePlayersPing.Text = "Cycle Players / Ping";
+            this.chkCyclePlayersPing.Text = "周期的 プレイヤー数 / Ping";
             this.chkCyclePlayersPing.UseVisualStyleBackColor = true;
             // 
             // lblOverlayFont
             // 
             this.lblOverlayFont.AutoSize = true;
-            this.lblOverlayFont.Location = new System.Drawing.Point(9, 284);
+            this.lblOverlayFont.Location = new System.Drawing.Point(9, 262);
             this.lblOverlayFont.Name = "lblOverlayFont";
-            this.lblOverlayFont.Size = new System.Drawing.Size(105, 13);
+            this.lblOverlayFont.Size = new System.Drawing.Size(72, 12);
             this.lblOverlayFont.TabIndex = 23;
-            this.lblOverlayFont.Text = "Custom Overlay Font";
+            this.lblOverlayFont.Text = "フォントの変更";
             // 
             // btnSelectFont
             // 
-            this.btnSelectFont.Location = new System.Drawing.Point(27, 299);
+            this.btnSelectFont.Location = new System.Drawing.Point(27, 276);
             this.btnSelectFont.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelectFont.Name = "btnSelectFont";
-            this.btnSelectFont.Size = new System.Drawing.Size(70, 20);
+            this.btnSelectFont.Size = new System.Drawing.Size(70, 18);
             this.btnSelectFont.TabIndex = 24;
-            this.btnSelectFont.Text = "Select Font";
+            this.btnSelectFont.Text = "選択";
             this.btnSelectFont.UseVisualStyleBackColor = true;
             this.btnSelectFont.Click += new System.EventHandler(this.btnSelectFont_Click);
             // 
             // btnResetOverlayFont
             // 
-            this.btnResetOverlayFont.Location = new System.Drawing.Point(27, 323);
+            this.btnResetOverlayFont.Location = new System.Drawing.Point(27, 298);
             this.btnResetOverlayFont.Margin = new System.Windows.Forms.Padding(2);
             this.btnResetOverlayFont.Name = "btnResetOverlayFont";
-            this.btnResetOverlayFont.Size = new System.Drawing.Size(70, 20);
+            this.btnResetOverlayFont.Size = new System.Drawing.Size(70, 18);
             this.btnResetOverlayFont.TabIndex = 25;
-            this.btnResetOverlayFont.Text = "Reset Font";
+            this.btnResetOverlayFont.Text = "リセット";
             this.btnResetOverlayFont.UseVisualStyleBackColor = true;
             this.btnResetOverlayFont.Click += new System.EventHandler(this.btnResetOverlayFont_Click);
             // 
             // grpOverlayFontExample
             // 
             this.grpOverlayFontExample.Controls.Add(this.lblOverlayFontExample);
-            this.grpOverlayFontExample.Location = new System.Drawing.Point(119, 284);
+            this.grpOverlayFontExample.Location = new System.Drawing.Point(119, 262);
             this.grpOverlayFontExample.Margin = new System.Windows.Forms.Padding(2);
             this.grpOverlayFontExample.Name = "grpOverlayFontExample";
             this.grpOverlayFontExample.Padding = new System.Windows.Forms.Padding(2);
-            this.grpOverlayFontExample.Size = new System.Drawing.Size(517, 59);
+            this.grpOverlayFontExample.Size = new System.Drawing.Size(517, 54);
             this.grpOverlayFontExample.TabIndex = 35;
             this.grpOverlayFontExample.TabStop = false;
-            this.grpOverlayFontExample.Text = "Example";
+            this.grpOverlayFontExample.Text = "サンプル";
             // 
             // lblOverlayFontExample
             // 
-            this.lblOverlayFontExample.Location = new System.Drawing.Point(4, 15);
+            this.lblOverlayFontExample.Location = new System.Drawing.Point(4, 14);
             this.lblOverlayFontExample.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOverlayFontExample.Name = "lblOverlayFontExample";
-            this.lblOverlayFontExample.Size = new System.Drawing.Size(509, 34);
+            this.lblOverlayFontExample.Size = new System.Drawing.Size(509, 31);
             this.lblOverlayFontExample.TabIndex = 0;
             this.lblOverlayFontExample.Text = "Round 3: Freezy Peak";
             this.lblOverlayFontExample.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -618,19 +621,20 @@
             this.grpStats.Controls.Add(this.lblPreviousWinsNote);
             this.grpStats.Controls.Add(this.lblPreviousWins);
             this.grpStats.Controls.Add(this.txtPreviousWins);
-            this.grpStats.Location = new System.Drawing.Point(12, 58);
+            this.grpStats.Location = new System.Drawing.Point(12, 54);
             this.grpStats.Name = "grpStats";
-            this.grpStats.Size = new System.Drawing.Size(645, 51);
+            this.grpStats.Size = new System.Drawing.Size(645, 47);
             this.grpStats.TabIndex = 3;
             this.grpStats.TabStop = false;
-            this.grpStats.Text = "Stats";
+            this.grpStats.Text = "情報";
+            this.grpStats.Enter += new System.EventHandler(this.grpStats_Enter);
             // 
             // chkChangeHoopsieLegends
             // 
             this.chkChangeHoopsieLegends.AutoSize = true;
-            this.chkChangeHoopsieLegends.Location = new System.Drawing.Point(390, 21);
+            this.chkChangeHoopsieLegends.Location = new System.Drawing.Point(390, 19);
             this.chkChangeHoopsieLegends.Name = "chkChangeHoopsieLegends";
-            this.chkChangeHoopsieLegends.Size = new System.Drawing.Size(243, 17);
+            this.chkChangeHoopsieLegends.Size = new System.Drawing.Size(255, 16);
             this.chkChangeHoopsieLegends.TabIndex = 4;
             this.chkChangeHoopsieLegends.Text = "Rename Hoopsie Legends to Hoopsie Heroes";
             this.chkChangeHoopsieLegends.UseVisualStyleBackColor = true;
@@ -638,38 +642,38 @@
             // chkAutoUpdate
             // 
             this.chkAutoUpdate.AutoSize = true;
-            this.chkAutoUpdate.Location = new System.Drawing.Point(254, 21);
+            this.chkAutoUpdate.Location = new System.Drawing.Point(254, 19);
             this.chkAutoUpdate.Name = "chkAutoUpdate";
-            this.chkAutoUpdate.Size = new System.Drawing.Size(128, 17);
+            this.chkAutoUpdate.Size = new System.Drawing.Size(72, 16);
             this.chkAutoUpdate.TabIndex = 3;
-            this.chkAutoUpdate.Text = "Auto Update Program";
+            this.chkAutoUpdate.Text = "自動更新";
             this.chkAutoUpdate.UseVisualStyleBackColor = true;
             // 
             // lblPreviousWinsNote
             // 
             this.lblPreviousWinsNote.AutoSize = true;
             this.lblPreviousWinsNote.ForeColor = System.Drawing.Color.DimGray;
-            this.lblPreviousWinsNote.Location = new System.Drawing.Point(133, 22);
+            this.lblPreviousWinsNote.Location = new System.Drawing.Point(133, 20);
             this.lblPreviousWinsNote.Name = "lblPreviousWinsNote";
-            this.lblPreviousWinsNote.Size = new System.Drawing.Size(108, 13);
+            this.lblPreviousWinsNote.Size = new System.Drawing.Size(118, 12);
             this.lblPreviousWinsNote.TabIndex = 2;
             this.lblPreviousWinsNote.Text = "(Before using tracker)";
             // 
             // lblPreviousWins
             // 
             this.lblPreviousWins.AutoSize = true;
-            this.lblPreviousWins.Location = new System.Drawing.Point(11, 22);
+            this.lblPreviousWins.Location = new System.Drawing.Point(11, 20);
             this.lblPreviousWins.Name = "lblPreviousWins";
-            this.lblPreviousWins.Size = new System.Drawing.Size(75, 13);
+            this.lblPreviousWins.Size = new System.Drawing.Size(77, 12);
             this.lblPreviousWins.TabIndex = 0;
             this.lblPreviousWins.Text = "Previous Wins";
             // 
             // txtPreviousWins
             // 
-            this.txtPreviousWins.Location = new System.Drawing.Point(92, 19);
+            this.txtPreviousWins.Location = new System.Drawing.Point(92, 18);
             this.txtPreviousWins.MaxLength = 4;
             this.txtPreviousWins.Name = "txtPreviousWins";
-            this.txtPreviousWins.Size = new System.Drawing.Size(35, 20);
+            this.txtPreviousWins.Size = new System.Drawing.Size(35, 19);
             this.txtPreviousWins.TabIndex = 1;
             this.txtPreviousWins.Text = "0";
             this.txtPreviousWins.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -681,75 +685,75 @@
             this.grpGameOptions.Controls.Add(this.txtGameExeLocation);
             this.grpGameOptions.Controls.Add(this.btnGameExeLocationBrowse);
             this.grpGameOptions.Controls.Add(this.chkAutoLaunchGameOnStart);
-            this.grpGameOptions.Location = new System.Drawing.Point(12, 521);
+            this.grpGameOptions.Location = new System.Drawing.Point(12, 481);
             this.grpGameOptions.Margin = new System.Windows.Forms.Padding(2);
             this.grpGameOptions.Name = "grpGameOptions";
             this.grpGameOptions.Padding = new System.Windows.Forms.Padding(2);
-            this.grpGameOptions.Size = new System.Drawing.Size(644, 69);
+            this.grpGameOptions.Size = new System.Drawing.Size(644, 64);
             this.grpGameOptions.TabIndex = 6;
             this.grpGameOptions.TabStop = false;
-            this.grpGameOptions.Text = "Game Options";
+            this.grpGameOptions.Text = "ゲーム設定";
             // 
             // lblGameExeLocation
             // 
             this.lblGameExeLocation.AutoSize = true;
-            this.lblGameExeLocation.Location = new System.Drawing.Point(11, 21);
+            this.lblGameExeLocation.Location = new System.Drawing.Point(11, 19);
             this.lblGameExeLocation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGameExeLocation.Name = "lblGameExeLocation";
-            this.lblGameExeLocation.Size = new System.Drawing.Size(125, 13);
+            this.lblGameExeLocation.Size = new System.Drawing.Size(143, 12);
             this.lblGameExeLocation.TabIndex = 0;
-            this.lblGameExeLocation.Text = "Fall Guys Game Location";
+            this.lblGameExeLocation.Text = "Fall Guys クライアントの場所";
             // 
             // txtGameExeLocation
             // 
             this.txtGameExeLocation.Enabled = false;
-            this.txtGameExeLocation.Location = new System.Drawing.Point(140, 19);
+            this.txtGameExeLocation.Location = new System.Drawing.Point(158, 18);
             this.txtGameExeLocation.Margin = new System.Windows.Forms.Padding(2);
             this.txtGameExeLocation.Name = "txtGameExeLocation";
-            this.txtGameExeLocation.Size = new System.Drawing.Size(447, 20);
+            this.txtGameExeLocation.Size = new System.Drawing.Size(429, 19);
             this.txtGameExeLocation.TabIndex = 1;
             // 
             // btnGameExeLocationBrowse
             // 
-            this.btnGameExeLocationBrowse.Location = new System.Drawing.Point(589, 18);
+            this.btnGameExeLocationBrowse.Location = new System.Drawing.Point(589, 17);
             this.btnGameExeLocationBrowse.Margin = new System.Windows.Forms.Padding(2);
             this.btnGameExeLocationBrowse.Name = "btnGameExeLocationBrowse";
-            this.btnGameExeLocationBrowse.Size = new System.Drawing.Size(50, 22);
+            this.btnGameExeLocationBrowse.Size = new System.Drawing.Size(50, 20);
             this.btnGameExeLocationBrowse.TabIndex = 2;
-            this.btnGameExeLocationBrowse.Text = "Browse";
+            this.btnGameExeLocationBrowse.Text = "検索";
             this.btnGameExeLocationBrowse.UseVisualStyleBackColor = true;
             this.btnGameExeLocationBrowse.Click += new System.EventHandler(this.btnGameExeLocationBrowse_Click);
             // 
             // chkAutoLaunchGameOnStart
             // 
-            this.chkAutoLaunchGameOnStart.Location = new System.Drawing.Point(13, 43);
+            this.chkAutoLaunchGameOnStart.Location = new System.Drawing.Point(13, 40);
             this.chkAutoLaunchGameOnStart.Margin = new System.Windows.Forms.Padding(2);
             this.chkAutoLaunchGameOnStart.Name = "chkAutoLaunchGameOnStart";
-            this.chkAutoLaunchGameOnStart.Size = new System.Drawing.Size(204, 16);
+            this.chkAutoLaunchGameOnStart.Size = new System.Drawing.Size(225, 15);
             this.chkAutoLaunchGameOnStart.TabIndex = 3;
-            this.chkAutoLaunchGameOnStart.Text = "Auto-launch Fall Guys on tracker start";
+            this.chkAutoLaunchGameOnStart.Text = "Faal guys 起動時に自動的に起動する";
             // 
             // grpSortingOptions
             // 
             this.grpSortingOptions.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grpSortingOptions.Controls.Add(this.chkIgnoreLevelTypeWhenSorting);
-            this.grpSortingOptions.Location = new System.Drawing.Point(12, 473);
+            this.grpSortingOptions.Location = new System.Drawing.Point(12, 437);
             this.grpSortingOptions.Margin = new System.Windows.Forms.Padding(2);
             this.grpSortingOptions.Name = "grpSortingOptions";
             this.grpSortingOptions.Padding = new System.Windows.Forms.Padding(2);
-            this.grpSortingOptions.Size = new System.Drawing.Size(645, 44);
+            this.grpSortingOptions.Size = new System.Drawing.Size(645, 41);
             this.grpSortingOptions.TabIndex = 5;
             this.grpSortingOptions.TabStop = false;
-            this.grpSortingOptions.Text = "Sorting Options";
+            this.grpSortingOptions.Text = "ソート設定";
             // 
             // chkIgnoreLevelTypeWhenSorting
             // 
             this.chkIgnoreLevelTypeWhenSorting.AutoSize = true;
-            this.chkIgnoreLevelTypeWhenSorting.Location = new System.Drawing.Point(16, 19);
+            this.chkIgnoreLevelTypeWhenSorting.Location = new System.Drawing.Point(16, 18);
             this.chkIgnoreLevelTypeWhenSorting.Margin = new System.Windows.Forms.Padding(2);
             this.chkIgnoreLevelTypeWhenSorting.Name = "chkIgnoreLevelTypeWhenSorting";
-            this.chkIgnoreLevelTypeWhenSorting.Size = new System.Drawing.Size(175, 17);
+            this.chkIgnoreLevelTypeWhenSorting.Size = new System.Drawing.Size(184, 16);
             this.chkIgnoreLevelTypeWhenSorting.TabIndex = 0;
             this.chkIgnoreLevelTypeWhenSorting.Text = "Ignore Level Type when sorting";
             this.chkIgnoreLevelTypeWhenSorting.UseVisualStyleBackColor = true;
@@ -758,22 +762,22 @@
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(581, 596);
+            this.btnCancel.Location = new System.Drawing.Point(581, 550);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(75, 21);
             this.btnCancel.TabIndex = 8;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "キャンセル";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // Settings
             // 
             this.AcceptButton = this.btnSave;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(669, 627);
+            this.ClientSize = new System.Drawing.Size(669, 579);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.grpGameOptions);
             this.Controls.Add(this.grpSortingOptions);

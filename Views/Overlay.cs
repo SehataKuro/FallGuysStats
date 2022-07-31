@@ -138,13 +138,13 @@ namespace FallGuysStats {
             string qualifyChanceDisplay;
             switch (qualifySwitchCount % 2) {
                 case 0:
-                    lblQualifyChance.Text = "QUALIFY:";
+                    lblQualifyChance.Text = "通過:";
                     qualifyChance = levelInfo.TotalQualify * 100f / (levelInfo.TotalPlays == 0 ? 1 : levelInfo.TotalPlays);
                     qualifyChanceDisplay = StatsForm.CurrentSettings.HideOverlayPercentages ? string.Empty : $" - {qualifyChance:0.0}%";
                     lblQualifyChance.TextRight = $"{levelInfo.TotalQualify} / {levelInfo.TotalPlays}{qualifyChanceDisplay}";
                     break;
                 case 1:
-                    lblQualifyChance.Text = "GOLD:";
+                    lblQualifyChance.Text = "ゴールド:";
                     qualifyChance = levelInfo.TotalGolds * 100f / (levelInfo.TotalPlays == 0 ? 1 : levelInfo.TotalPlays);
                     qualifyChanceDisplay = StatsForm.CurrentSettings.HideOverlayPercentages ? string.Empty : $" - {qualifyChance:0.0}%";
                     lblQualifyChance.TextRight = $"{levelInfo.TotalGolds} / {levelInfo.TotalPlays}{qualifyChanceDisplay}";
@@ -158,15 +158,15 @@ namespace FallGuysStats {
             }
             switch (fastestSwitchCount % (levelInfo.BestScore.HasValue ? 3 : 2)) {
                 case 0:
-                    lblFastest.Text = "LONGEST:";
+                    lblFastest.Text = "最遅:";
                     lblFastest.TextRight = levelInfo.LongestFinish.HasValue ? $"{levelInfo.LongestFinish:m\\:ss\\.ff}" : "-";
                     break;
                 case 1:
-                    lblFastest.Text = "FASTEST:";
+                    lblFastest.Text = "最速:";
                     lblFastest.TextRight = levelInfo.BestFinish.HasValue ? $"{levelInfo.BestFinish:m\\:ss\\.ff}" : "-";
                     break;
                 case 2:
-                    lblFastest.Text = "HIGH SCORE:";
+                    lblFastest.Text = "ハイスコア:";
                     lblFastest.TextRight = levelInfo.BestScore.Value.ToString();
                     break;
             }
@@ -178,11 +178,11 @@ namespace FallGuysStats {
             }
             switch (playersSwitchCount % 2) {
                 case 0:
-                    lblPlayers.Text = "PLAYERS:";
+                    lblPlayers.Text = "プレイヤー:";
                     lblPlayers.TextRight = lastRound?.Players.ToString();
                     break;
                 case 1:
-                    lblPlayers.Text = "PING:";
+                    lblPlayers.Text = "PING値:";
                     lblPlayers.TextRight = Stats.InShow && Stats.LastServerPing != 0 ? $"{Stats.LastServerPing} ms" : "-";
                     break;
             }
@@ -194,11 +194,11 @@ namespace FallGuysStats {
             }
             switch (streakSwitchCount % 2) {
                 case 0:
-                    lblStreak.Text = "WIN STREAK:";
+                    lblStreak.Text = "連勝:";
                     lblStreak.TextRight = $"{levelInfo.CurrentStreak} ({levelInfo.BestStreak})";
                     break;
                 case 1:
-                    lblStreak.Text = "FINAL STREAK:";
+                    lblStreak.Text = "連続ファイナル";
                     lblStreak.TextRight = $"{levelInfo.CurrentFinalStreak} ({levelInfo.BestFinalStreak})";
                     break;
             }
@@ -219,7 +219,7 @@ namespace FallGuysStats {
 
                 if (lastRound != null && !string.IsNullOrEmpty(lastRound.Name)) {
                     string roundName = lastRound.VerifiedName();
-                    lblName.Text = $"ROUND {lastRound.Round}:";
+                    lblName.Text = $"ラウンド {lastRound.Round}:";
 
                     if (StatsForm.StatLookup.TryGetValue(roundName, out var level)) {
                         roundName = level.Name.ToUpper();
@@ -299,9 +299,9 @@ namespace FallGuysStats {
                     }
 
                     if (lastRound.GameDuration > 0) {
-                        lblDuration.Text = $"TIME ({TimeSpan.FromSeconds(lastRound.GameDuration):m\\:ss}):";
+                        lblDuration.Text = $"タイム ({TimeSpan.FromSeconds(lastRound.GameDuration):m\\:ss}):";
                     } else {
-                        lblDuration.Text = "TIME:";
+                        lblDuration.Text = "タイム";
                     }
 
                     if (End != DateTime.MinValue) {
@@ -580,6 +580,11 @@ namespace FallGuysStats {
 
             DisplayTabs(drawHeight > 99);
         }
+
+        private void lblWins_Click(object sender, EventArgs e) {
+
+        }
+
         private Bitmap RecreateBackground() {
             lock (GlobalFont) {
                 if (Background != null) {

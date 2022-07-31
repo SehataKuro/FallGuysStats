@@ -41,7 +41,7 @@
             this.lblFilter.Name = "lblFilter";
             this.lblFilter.Size = new System.Drawing.Size(110, 22);
             this.lblFilter.TabIndex = 22;
-            this.lblFilter.Text = "SEASON";
+            this.lblFilter.Text = "シーズン";
             this.lblFilter.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblFilter.TextRight = "";
             this.lblFilter.Visible = false;
@@ -52,7 +52,7 @@
             this.lblStreak.Name = "lblStreak";
             this.lblStreak.Size = new System.Drawing.Size(242, 22);
             this.lblStreak.TabIndex = 21;
-            this.lblStreak.Text = "STREAK:";
+            this.lblStreak.Text = "ストリーク:";
             this.lblStreak.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lblStreak.TextRight = "0 (BEST 0)";
             this.lblStreak.Visible = false;
@@ -63,7 +63,7 @@
             this.lblFinals.Name = "lblFinals";
             this.lblFinals.Size = new System.Drawing.Size(242, 22);
             this.lblFinals.TabIndex = 5;
-            this.lblFinals.Text = "FINALS:";
+            this.lblFinals.Text = "最終:";
             this.lblFinals.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lblFinals.TextRight = "0 - 0.0%";
             this.lblFinals.Visible = false;
@@ -74,7 +74,7 @@
             this.lblQualifyChance.Name = "lblQualifyChance";
             this.lblQualifyChance.Size = new System.Drawing.Size(281, 22);
             this.lblQualifyChance.TabIndex = 14;
-            this.lblQualifyChance.Text = "QUALIFY:";
+            this.lblQualifyChance.Text = "通過:";
             this.lblQualifyChance.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lblQualifyChance.TextRight = "0 / 0 - 0.0%";
             this.lblQualifyChance.Visible = false;
@@ -85,7 +85,7 @@
             this.lblFastest.Name = "lblFastest";
             this.lblFastest.Size = new System.Drawing.Size(281, 22);
             this.lblFastest.TabIndex = 16;
-            this.lblFastest.Text = "FASTEST:";
+            this.lblFastest.Text = "最速:";
             this.lblFastest.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lblFastest.TextRight = "-";
             this.lblFastest.Visible = false;
@@ -96,7 +96,7 @@
             this.lblDuration.Name = "lblDuration";
             this.lblDuration.Size = new System.Drawing.Size(225, 22);
             this.lblDuration.TabIndex = 18;
-            this.lblDuration.Text = "TIME:";
+            this.lblDuration.Text = "時間:";
             this.lblDuration.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lblDuration.TextRight = "-";
             this.lblDuration.Visible = false;
@@ -107,7 +107,7 @@
             this.lblPlayers.Name = "lblPlayers";
             this.lblPlayers.Size = new System.Drawing.Size(225, 22);
             this.lblPlayers.TabIndex = 12;
-            this.lblPlayers.Text = "PLAYERS:";
+            this.lblPlayers.Text = "プレイヤー数:";
             this.lblPlayers.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lblPlayers.TextRight = "0";
             this.lblPlayers.Visible = false;
@@ -119,7 +119,7 @@
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(281, 22);
             this.lblName.TabIndex = 10;
-            this.lblName.Text = "ROUND 1:";
+            this.lblName.Text = "ラウンド 1:";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lblName.TextRight = "N/A";
             this.lblName.Visible = false;
@@ -130,10 +130,11 @@
             this.lblWins.Name = "lblWins";
             this.lblWins.Size = new System.Drawing.Size(242, 22);
             this.lblWins.TabIndex = 1;
-            this.lblWins.Text = "WINS:";
+            this.lblWins.Text = "勝率:";
             this.lblWins.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lblWins.TextRight = "0 - 0.0%";
             this.lblWins.Visible = false;
+            this.lblWins.Click += new System.EventHandler(this.lblWins_Click);
             // 
             // lblFinish
             // 
@@ -141,7 +142,7 @@
             this.lblFinish.Name = "lblFinish";
             this.lblFinish.Size = new System.Drawing.Size(225, 22);
             this.lblFinish.TabIndex = 20;
-            this.lblFinish.Text = "FINISH:";
+            this.lblFinish.Text = "フィニッシュ:";
             this.lblFinish.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lblFinish.TextRight = "-";
             this.lblFinish.Visible = false;

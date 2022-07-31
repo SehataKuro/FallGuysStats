@@ -61,7 +61,7 @@
             this.gridDetails.Name = "gridDetails";
             this.gridDetails.ReadOnly = true;
             this.gridDetails.RowHeadersVisible = false;
-            this.gridDetails.Size = new System.Drawing.Size(614, 509);
+            this.gridDetails.Size = new System.Drawing.Size(614, 470);
             this.gridDetails.TabIndex = 10;
             this.gridDetails.DataSourceChanged += new System.EventHandler(this.gridDetails_DataSourceChanged);
             this.gridDetails.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.gridDetails_CellFormatting);
@@ -70,10 +70,10 @@
             // 
             // LevelDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
-            this.ClientSize = new System.Drawing.Size(614, 509);
+            this.ClientSize = new System.Drawing.Size(614, 470);
             this.Controls.Add(this.gridDetails);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
@@ -82,7 +82,7 @@
             this.Name = "LevelDetails";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Level Stats";
+            this.Text = "レベル情報";
             this.Load += new System.EventHandler(this.LevelDetails_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LevelDetails_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.gridDetails)).EndInit();
