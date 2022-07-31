@@ -138,7 +138,7 @@ namespace FallGuysStats {
             string qualifyChanceDisplay;
             switch (qualifySwitchCount % 2) {
                 case 0:
-                    lblQualifyChance.Text = "通過:";
+                    lblQualifyChance.Text = "クリア:";
                     qualifyChance = levelInfo.TotalQualify * 100f / (levelInfo.TotalPlays == 0 ? 1 : levelInfo.TotalPlays);
                     qualifyChanceDisplay = StatsForm.CurrentSettings.HideOverlayPercentages ? string.Empty : $" - {qualifyChance:0.0}%";
                     lblQualifyChance.TextRight = $"{levelInfo.TotalQualify} / {levelInfo.TotalPlays}{qualifyChanceDisplay}";

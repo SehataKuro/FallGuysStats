@@ -65,7 +65,7 @@ namespace FallGuysStats {
         public Stats() {
             InitializeComponent();
 
-            Text = $"Fall Guys Stats v{Assembly.GetExecutingAssembly().GetName().Version.ToString(2)}";
+            Text = $"Fall Guys Stats JP v{Assembly.GetExecutingAssembly().GetName().Version.ToString(2)}";
             textInfo = Thread.CurrentThread.CurrentCulture.TextInfo;
 
             logFile.OnParsedLogLines += LogFile_OnParsedLogLines;
