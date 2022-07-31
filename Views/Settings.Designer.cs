@@ -719,9 +719,10 @@
             this.chkAutoLaunchGameOnStart.Location = new System.Drawing.Point(13, 40);
             this.chkAutoLaunchGameOnStart.Margin = new System.Windows.Forms.Padding(2);
             this.chkAutoLaunchGameOnStart.Name = "chkAutoLaunchGameOnStart";
-            this.chkAutoLaunchGameOnStart.Size = new System.Drawing.Size(225, 15);
+            this.chkAutoLaunchGameOnStart.Size = new System.Drawing.Size(282, 15);
             this.chkAutoLaunchGameOnStart.TabIndex = 3;
-            this.chkAutoLaunchGameOnStart.Text = "Faal guys 起動時に自動的に起動する";
+            this.chkAutoLaunchGameOnStart.Text = "オーバーレイ起動時に自動的にFall Guysを起動する";
+            this.chkAutoLaunchGameOnStart.CheckedChanged += new System.EventHandler(this.chkAutoLaunchGameOnStart_CheckedChanged);
             // 
             // grpSortingOptions
             // 

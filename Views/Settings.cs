@@ -346,5 +346,9 @@ namespace FallGuysStats {
         private void lblPreviousWins_Click(object sender, EventArgs e) {
 
         }
+
+        private void chkAutoLaunchGameOnStart_CheckedChanged(object sender, EventArgs e) {
+
+        }
     }
 }
