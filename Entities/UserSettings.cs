@@ -37,7 +37,6 @@
         public int? OverlayWidth { get; set; }
         public int? OverlayHeight { get; set; }
         public bool HideOverlayPercentages { get; set; }
-        public bool HoopsieHeros { get; set; }
         public int Version { get; set; }
         public bool IgnoreLevelTypeWhenSorting { get; set; }
         public string GameExeLocation { get; set; }

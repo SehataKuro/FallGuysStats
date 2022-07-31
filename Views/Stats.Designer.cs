@@ -102,7 +102,7 @@
             this.menuDayStats,
             this.menuSessionStats});
             this.menuStatsFilter.Name = "menuStatsFilter";
-            this.menuStatsFilter.Size = new System.Drawing.Size(180, 22);
+            this.menuStatsFilter.Size = new System.Drawing.Size(118, 22);
             this.menuStatsFilter.Text = "ステータス";
             // 
             // menuAllStats
@@ -164,7 +164,7 @@
             this.menuSoloStats,
             this.menuPartyStats});
             this.menuPartyFilter.Name = "menuPartyFilter";
-            this.menuPartyFilter.Size = new System.Drawing.Size(180, 22);
+            this.menuPartyFilter.Size = new System.Drawing.Size(118, 22);
             this.menuPartyFilter.Text = "パーティー";
             // 
             // menuAllPartyStats
@@ -214,7 +214,7 @@
             this.menuProfileMain.CheckOnClick = true;
             this.menuProfileMain.CheckState = System.Windows.Forms.CheckState.Checked;
             this.menuProfileMain.Name = "menuProfileMain";
-            this.menuProfileMain.Size = new System.Drawing.Size(180, 22);
+            this.menuProfileMain.Size = new System.Drawing.Size(100, 22);
             this.menuProfileMain.Text = "メイン";
             this.menuProfileMain.Click += new System.EventHandler(this.menuStats_Click);
             // 
@@ -222,7 +222,7 @@
             // 
             this.menuProfilePractice.CheckOnClick = true;
             this.menuProfilePractice.Name = "menuProfilePractice";
-            this.menuProfilePractice.Size = new System.Drawing.Size(180, 22);
+            this.menuProfilePractice.Size = new System.Drawing.Size(100, 22);
             this.menuProfilePractice.Text = "練習";
             this.menuProfilePractice.Click += new System.EventHandler(this.menuStats_Click);
             // 
@@ -254,8 +254,8 @@
             // 
             this.menuLaunchFallGuys.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuLaunchFallGuys.Name = "menuLaunchFallGuys";
-            this.menuLaunchFallGuys.Size = new System.Drawing.Size(47, 20);
-            this.menuLaunchFallGuys.Text = "起動";
+            this.menuLaunchFallGuys.Size = new System.Drawing.Size(109, 20);
+            this.menuLaunchFallGuys.Text = "Fall Guys を起動";
             this.menuLaunchFallGuys.Click += new System.EventHandler(this.menuLaunchFallGuys_Click);
             // 
             // infoStrip
@@ -273,7 +273,7 @@
             this.infoStrip.Location = new System.Drawing.Point(0, 24);
             this.infoStrip.Name = "infoStrip";
             this.infoStrip.Padding = new System.Windows.Forms.Padding(4, 6, 1, 1);
-            this.infoStrip.Size = new System.Drawing.Size(634, 23);
+            this.infoStrip.Size = new System.Drawing.Size(634, 26);
             this.infoStrip.TabIndex = 13;
             // 
             // lblTotalTime
@@ -333,6 +333,7 @@
             this.lblKudos.Name = "lblKudos";
             this.lblKudos.Size = new System.Drawing.Size(49, 13);
             this.lblKudos.Text = "Kudos: 0";
+            this.lblKudos.Click += new System.EventHandler(this.lblKudos_Click);
             // 
             // gridDetails
             // 

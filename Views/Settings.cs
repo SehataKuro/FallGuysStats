@@ -57,7 +57,6 @@ namespace FallGuysStats {
             chkAutoUpdate.Checked = CurrentSettings.AutoUpdate;
             chkFlipped.Checked = CurrentSettings.FlippedDisplay;
             chkHidePercentages.Checked = CurrentSettings.HideOverlayPercentages;
-            chkChangeHoopsieLegends.Checked = CurrentSettings.HoopsieHeros;
 
             switch (CurrentSettings.OverlayColor) {
                 case 0: cboOverlayColor.SelectedItem = "Magenta"; break;
@@ -183,7 +182,6 @@ namespace FallGuysStats {
             CurrentSettings.AutoUpdate = chkAutoUpdate.Checked;
             CurrentSettings.FlippedDisplay = chkFlipped.Checked;
             CurrentSettings.HideOverlayPercentages = chkHidePercentages.Checked;
-            CurrentSettings.HoopsieHeros = chkChangeHoopsieLegends.Checked;
 
             switch ((string)cboOverlayColor.SelectedItem) {
                 case "Magenta": CurrentSettings.OverlayColor = 0; break;
@@ -333,19 +331,23 @@ namespace FallGuysStats {
 
         }
 
-        private void lblWinsFilter_Click(object sender, EventArgs e) {
-
-        }
-
         private void chkIgnoreLevelTypeWhenSorting_CheckedChanged(object sender, EventArgs e) {
 
         }
 
-        private void lblQualifyFilter_Click(object sender, EventArgs e) {
+        private void chkChangeHoopsieLegends_CheckedChanged(object sender, EventArgs e) {
+
+        }
+
+        private void lblFastestFilter_Click(object sender, EventArgs e) {
 
         }
 
         private void lblPreviousWins_Click(object sender, EventArgs e) {
+
+        }
+
+        private void chkAutoLaunchGameOnStart_CheckedChanged(object sender, EventArgs e) {
 
         }
     }

@@ -1,8 +1,9 @@
 # 日本語版Fall Guys Stats
 設定画面やオーバーレイに表示される言語を日本語に翻訳しました。
 翻訳の間違いがあるかもしれません。
-
-
+不具合や翻訳ミスなどがあれば@sehatakuroのツイッターに連絡してください。
+## ダウンロード
+  - [FallGuyStatsJP.zip](https://github.com/SehataKuro/FallGuysStatsJP/raw/master/FallGuysStatsJP.zip)
 
 
 

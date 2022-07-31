@@ -74,7 +74,7 @@
             this.lblQualifyChance.Name = "lblQualifyChance";
             this.lblQualifyChance.Size = new System.Drawing.Size(281, 22);
             this.lblQualifyChance.TabIndex = 14;
-            this.lblQualifyChance.Text = "通過:";
+            this.lblQualifyChance.Text = "クリア:";
             this.lblQualifyChance.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lblQualifyChance.TextRight = "0 / 0 - 0.0%";
             this.lblQualifyChance.Visible = false;

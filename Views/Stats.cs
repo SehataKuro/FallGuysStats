@@ -99,7 +99,7 @@ namespace FallGuysStats {
                 }
             }
 
-            UpdateHoopsieLegends();
+
 
             RoundDetails.EnsureIndex(x => x.Name);
             RoundDetails.EnsureIndex(x => x.ShowID);
@@ -509,7 +509,6 @@ namespace FallGuysStats {
                 OverlayWidth = 786,
                 OverlayHeight = 99,
                 HideOverlayPercentages = false,
-                HoopsieHeros = false,
                 Version = 19,
                 AutoLaunchGameOnStartup = false,
                 GameExeLocation = string.Empty,
@@ -517,14 +516,7 @@ namespace FallGuysStats {
                 UpdatedDateFormat = true
             };
         }
-        private void UpdateHoopsieLegends() {
-            LevelStats level = StatLookup["round_hoops_blockade_solo"];
-            string newName = CurrentSettings.HoopsieHeros ? "Hoopsie Heroes" : "Hoopsie Legends";
-            if (level.Name != newName) {
-                level.Name = newName;
-                gridDetails.Invalidate();
-            }
-        }
+
         public void UpdateDates() {
             if (DateTime.Now.Date.ToUniversalTime() == DayStart) { return; }
 
@@ -1566,7 +1558,6 @@ namespace FallGuysStats {
                         CurrentSettings = settings.CurrentSettings;
                         SaveUserSettings();
 
-                        UpdateHoopsieLegends();
 
                         if (string.IsNullOrEmpty(lastLogPath) != string.IsNullOrEmpty(CurrentSettings.LogPath) || (!string.IsNullOrEmpty(lastLogPath) && lastLogPath.Equals(CurrentSettings.LogPath, StringComparison.OrdinalIgnoreCase))) {
                             await logFile.Stop();
@@ -1620,6 +1611,11 @@ namespace FallGuysStats {
         private void infoStrip_MouseLeave(object sender, EventArgs e) {
             Cursor = Cursors.Default;
         }
+
+        private void lblKudos_Click(object sender, EventArgs e) {
+
+        }
+
         private void menuLaunchFallGuys_Click(object sender, EventArgs e) {
             try {
                 LaunchGame(false);

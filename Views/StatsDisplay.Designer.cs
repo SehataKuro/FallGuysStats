@@ -40,19 +40,19 @@
             this.graph.BackgroundColor = System.Drawing.Color.Transparent;
             this.graph.ErrorImage = null;
             this.graph.InitialImage = null;
-            this.graph.Location = new System.Drawing.Point(0, 36);
+            this.graph.Location = new System.Drawing.Point(0, 33);
             this.graph.Name = "graph";
             this.graph.Opacity = 0;
-            this.graph.Size = new System.Drawing.Size(614, 502);
+            this.graph.Size = new System.Drawing.Size(614, 463);
             this.graph.TabIndex = 0;
             this.graph.TabStop = false;
             // 
             // chkWins
             // 
             this.chkWins.AutoSize = true;
-            this.chkWins.Location = new System.Drawing.Point(12, 13);
+            this.chkWins.Location = new System.Drawing.Point(12, 12);
             this.chkWins.Name = "chkWins";
-            this.chkWins.Size = new System.Drawing.Size(50, 17);
+            this.chkWins.Size = new System.Drawing.Size(48, 16);
             this.chkWins.TabIndex = 1;
             this.chkWins.Text = "Wins";
             this.chkWins.UseVisualStyleBackColor = true;
@@ -61,9 +61,9 @@
             // chkFinals
             // 
             this.chkFinals.AutoSize = true;
-            this.chkFinals.Location = new System.Drawing.Point(68, 13);
+            this.chkFinals.Location = new System.Drawing.Point(68, 12);
             this.chkFinals.Name = "chkFinals";
-            this.chkFinals.Size = new System.Drawing.Size(53, 17);
+            this.chkFinals.Size = new System.Drawing.Size(55, 16);
             this.chkFinals.TabIndex = 2;
             this.chkFinals.Text = "Finals";
             this.chkFinals.UseVisualStyleBackColor = true;
@@ -72,9 +72,9 @@
             // chkShows
             // 
             this.chkShows.AutoSize = true;
-            this.chkShows.Location = new System.Drawing.Point(127, 13);
+            this.chkShows.Location = new System.Drawing.Point(127, 12);
             this.chkShows.Name = "chkShows";
-            this.chkShows.Size = new System.Drawing.Size(58, 17);
+            this.chkShows.Size = new System.Drawing.Size(57, 16);
             this.chkShows.TabIndex = 3;
             this.chkShows.Text = "Shows";
             this.chkShows.UseVisualStyleBackColor = true;
@@ -82,10 +82,10 @@
             // 
             // StatsDisplay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
-            this.ClientSize = new System.Drawing.Size(614, 538);
+            this.ClientSize = new System.Drawing.Size(614, 497);
             this.Controls.Add(this.chkShows);
             this.Controls.Add(this.chkFinals);
             this.Controls.Add(this.chkWins);
