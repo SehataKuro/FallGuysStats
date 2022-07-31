@@ -68,7 +68,6 @@
             this.grpOverlayFontExample = new System.Windows.Forms.GroupBox();
             this.lblOverlayFontExample = new System.Windows.Forms.Label();
             this.grpStats = new System.Windows.Forms.GroupBox();
-            this.chkChangeHoopsieLegends = new System.Windows.Forms.CheckBox();
             this.chkAutoUpdate = new System.Windows.Forms.CheckBox();
             this.lblPreviousWinsNote = new System.Windows.Forms.Label();
             this.lblPreviousWins = new System.Windows.Forms.Label();
@@ -181,24 +180,24 @@
             this.grpCycleQualifyGold.Margin = new System.Windows.Forms.Padding(0);
             this.grpCycleQualifyGold.Name = "grpCycleQualifyGold";
             this.grpCycleQualifyGold.Padding = new System.Windows.Forms.Padding(2);
-            this.grpCycleQualifyGold.Size = new System.Drawing.Size(369, 30);
+            this.grpCycleQualifyGold.Size = new System.Drawing.Size(390, 30);
             this.grpCycleQualifyGold.TabIndex = 8;
             this.grpCycleQualifyGold.TabStop = false;
             // 
             // chkOnlyShowGold
             // 
             this.chkOnlyShowGold.AutoSize = true;
-            this.chkOnlyShowGold.Location = new System.Drawing.Point(259, 9);
+            this.chkOnlyShowGold.Location = new System.Drawing.Point(278, 8);
             this.chkOnlyShowGold.Name = "chkOnlyShowGold";
-            this.chkOnlyShowGold.Size = new System.Drawing.Size(82, 16);
+            this.chkOnlyShowGold.Size = new System.Drawing.Size(62, 16);
             this.chkOnlyShowGold.TabIndex = 2;
-            this.chkOnlyShowGold.Text = "ゴールドのみ";
+            this.chkOnlyShowGold.Text = "1位のみ";
             this.chkOnlyShowGold.UseVisualStyleBackColor = true;
             // 
             // chkOnlyShowQualify
             // 
             this.chkOnlyShowQualify.AutoSize = true;
-            this.chkOnlyShowQualify.Location = new System.Drawing.Point(151, 9);
+            this.chkOnlyShowQualify.Location = new System.Drawing.Point(169, 9);
             this.chkOnlyShowQualify.Name = "chkOnlyShowQualify";
             this.chkOnlyShowQualify.Size = new System.Drawing.Size(68, 16);
             this.chkOnlyShowQualify.TabIndex = 1;
@@ -211,10 +210,10 @@
             this.chkCycleQualifyGold.Checked = true;
             this.chkCycleQualifyGold.Location = new System.Drawing.Point(5, 9);
             this.chkCycleQualifyGold.Name = "chkCycleQualifyGold";
-            this.chkCycleQualifyGold.Size = new System.Drawing.Size(139, 16);
+            this.chkCycleQualifyGold.Size = new System.Drawing.Size(119, 16);
             this.chkCycleQualifyGold.TabIndex = 0;
             this.chkCycleQualifyGold.TabStop = true;
-            this.chkCycleQualifyGold.Text = "周期的 クリア / ゴールド";
+            this.chkCycleQualifyGold.Text = "周期的 クリア / 1位";
             this.chkCycleQualifyGold.UseVisualStyleBackColor = true;
             // 
             // grpCycleFastestLongest
@@ -228,14 +227,14 @@
             this.grpCycleFastestLongest.Margin = new System.Windows.Forms.Padding(0);
             this.grpCycleFastestLongest.Name = "grpCycleFastestLongest";
             this.grpCycleFastestLongest.Padding = new System.Windows.Forms.Padding(2);
-            this.grpCycleFastestLongest.Size = new System.Drawing.Size(369, 30);
+            this.grpCycleFastestLongest.Size = new System.Drawing.Size(390, 30);
             this.grpCycleFastestLongest.TabIndex = 9;
             this.grpCycleFastestLongest.TabStop = false;
             // 
             // chkOnlyShowLongest
             // 
             this.chkOnlyShowLongest.AutoSize = true;
-            this.chkOnlyShowLongest.Location = new System.Drawing.Point(259, 9);
+            this.chkOnlyShowLongest.Location = new System.Drawing.Point(278, 8);
             this.chkOnlyShowLongest.Name = "chkOnlyShowLongest";
             this.chkOnlyShowLongest.Size = new System.Drawing.Size(68, 16);
             this.chkOnlyShowLongest.TabIndex = 2;
@@ -245,7 +244,7 @@
             // chkOnlyShowFastest
             // 
             this.chkOnlyShowFastest.AutoSize = true;
-            this.chkOnlyShowFastest.Location = new System.Drawing.Point(151, 9);
+            this.chkOnlyShowFastest.Location = new System.Drawing.Point(169, 8);
             this.chkOnlyShowFastest.Name = "chkOnlyShowFastest";
             this.chkOnlyShowFastest.Size = new System.Drawing.Size(68, 16);
             this.chkOnlyShowFastest.TabIndex = 1;
@@ -269,9 +268,9 @@
             this.chkHidePercentages.AutoSize = true;
             this.chkHidePercentages.Location = new System.Drawing.Point(16, 83);
             this.chkHidePercentages.Name = "chkHidePercentages";
-            this.chkHidePercentages.Size = new System.Drawing.Size(114, 16);
+            this.chkHidePercentages.Size = new System.Drawing.Size(126, 16);
             this.chkHidePercentages.TabIndex = 3;
-            this.chkHidePercentages.Text = "Hide Percentages";
+            this.chkHidePercentages.Text = "パーセント表示を隠す";
             this.chkHidePercentages.UseVisualStyleBackColor = true;
             // 
             // chkHideWinsInfo
@@ -279,9 +278,9 @@
             this.chkHideWinsInfo.AutoSize = true;
             this.chkHideWinsInfo.Location = new System.Drawing.Point(16, 19);
             this.chkHideWinsInfo.Name = "chkHideWinsInfo";
-            this.chkHideWinsInfo.Size = new System.Drawing.Size(98, 16);
+            this.chkHideWinsInfo.Size = new System.Drawing.Size(103, 16);
             this.chkHideWinsInfo.TabIndex = 0;
-            this.chkHideWinsInfo.Text = "Hide Wins info";
+            this.chkHideWinsInfo.Text = "勝利表示を隠す";
             this.chkHideWinsInfo.UseVisualStyleBackColor = true;
             // 
             // cboOverlayColor
@@ -324,9 +323,9 @@
             this.chkShowTabs.AutoSize = true;
             this.chkShowTabs.Location = new System.Drawing.Point(16, 104);
             this.chkShowTabs.Name = "chkShowTabs";
-            this.chkShowTabs.Size = new System.Drawing.Size(160, 16);
+            this.chkShowTabs.Size = new System.Drawing.Size(170, 16);
             this.chkShowTabs.TabIndex = 4;
-            this.chkShowTabs.Text = "Show Tab for current filter";
+            this.chkShowTabs.Text = "現在のフィルタのタブを表示する";
             this.chkShowTabs.UseVisualStyleBackColor = true;
             // 
             // chkHideTimeInfo
@@ -334,9 +333,9 @@
             this.chkHideTimeInfo.AutoSize = true;
             this.chkHideTimeInfo.Location = new System.Drawing.Point(16, 62);
             this.chkHideTimeInfo.Name = "chkHideTimeInfo";
-            this.chkHideTimeInfo.Size = new System.Drawing.Size(99, 16);
+            this.chkHideTimeInfo.Size = new System.Drawing.Size(106, 16);
             this.chkHideTimeInfo.TabIndex = 2;
-            this.chkHideTimeInfo.Text = "Hide Time info";
+            this.chkHideTimeInfo.Text = "タイム表示を隠す";
             this.chkHideTimeInfo.UseVisualStyleBackColor = true;
             // 
             // chkHideRoundInfo
@@ -344,9 +343,9 @@
             this.chkHideRoundInfo.AutoSize = true;
             this.chkHideRoundInfo.Location = new System.Drawing.Point(16, 41);
             this.chkHideRoundInfo.Name = "chkHideRoundInfo";
-            this.chkHideRoundInfo.Size = new System.Drawing.Size(106, 16);
+            this.chkHideRoundInfo.Size = new System.Drawing.Size(114, 16);
             this.chkHideRoundInfo.TabIndex = 1;
-            this.chkHideRoundInfo.Text = "Hide Round info";
+            this.chkHideRoundInfo.Text = "ラウンド表示を隠す";
             this.chkHideRoundInfo.UseVisualStyleBackColor = true;
             // 
             // cboFastestFilter
@@ -368,11 +367,12 @@
             // lblFastestFilter
             // 
             this.lblFastestFilter.AutoSize = true;
-            this.lblFastestFilter.Location = new System.Drawing.Point(326, 66);
+            this.lblFastestFilter.Location = new System.Drawing.Point(327, 66);
             this.lblFastestFilter.Name = "lblFastestFilter";
-            this.lblFastestFilter.Size = new System.Drawing.Size(129, 12);
+            this.lblFastestFilter.Size = new System.Drawing.Size(114, 12);
             this.lblFastestFilter.TabIndex = 16;
-            this.lblFastestFilter.Text = "Fastest / Longest Filter";
+            this.lblFastestFilter.Text = "最速 / 最遅 フィルター";
+            this.lblFastestFilter.Click += new System.EventHandler(this.lblFastestFilter_Click);
             // 
             // cboQualifyFilter
             // 
@@ -393,11 +393,11 @@
             // lblQualifyFilter
             // 
             this.lblQualifyFilter.AutoSize = true;
-            this.lblQualifyFilter.Location = new System.Drawing.Point(344, 43);
+            this.lblQualifyFilter.Location = new System.Drawing.Point(333, 44);
             this.lblQualifyFilter.Name = "lblQualifyFilter";
-            this.lblQualifyFilter.Size = new System.Drawing.Size(109, 12);
+            this.lblQualifyFilter.Size = new System.Drawing.Size(108, 12);
             this.lblQualifyFilter.TabIndex = 14;
-            this.lblQualifyFilter.Text = "Qualify / Gold Filter";
+            this.lblQualifyFilter.Text = "クリア / 1位 フィルター";
             // 
             // cboWinsFilter
             // 
@@ -418,11 +418,11 @@
             // lblWinsFilter
             // 
             this.lblWinsFilter.AutoSize = true;
-            this.lblWinsFilter.Location = new System.Drawing.Point(352, 20);
+            this.lblWinsFilter.Location = new System.Drawing.Point(307, 20);
             this.lblWinsFilter.Name = "lblWinsFilter";
-            this.lblWinsFilter.Size = new System.Drawing.Size(99, 12);
+            this.lblWinsFilter.Size = new System.Drawing.Size(134, 12);
             this.lblWinsFilter.TabIndex = 12;
-            this.lblWinsFilter.Text = "Wins / Final Filter";
+            this.lblWinsFilter.Text = "優勝 / ファイナル フィルター";
             // 
             // chkOverlayOnTop
             // 
@@ -439,9 +439,9 @@
             this.lblCycleTimeSecondsTag.AutoSize = true;
             this.lblCycleTimeSecondsTag.Location = new System.Drawing.Point(125, 139);
             this.lblCycleTimeSecondsTag.Name = "lblCycleTimeSecondsTag";
-            this.lblCycleTimeSecondsTag.Size = new System.Drawing.Size(23, 12);
+            this.lblCycleTimeSecondsTag.Size = new System.Drawing.Size(17, 12);
             this.lblCycleTimeSecondsTag.TabIndex = 7;
-            this.lblCycleTimeSecondsTag.Text = "sec";
+            this.lblCycleTimeSecondsTag.Text = "秒";
             // 
             // lblCycleTimeSeconds
             // 
@@ -474,14 +474,14 @@
             this.grpCycleWinFinalStreak.Margin = new System.Windows.Forms.Padding(0);
             this.grpCycleWinFinalStreak.Name = "grpCycleWinFinalStreak";
             this.grpCycleWinFinalStreak.Padding = new System.Windows.Forms.Padding(2);
-            this.grpCycleWinFinalStreak.Size = new System.Drawing.Size(369, 30);
+            this.grpCycleWinFinalStreak.Size = new System.Drawing.Size(390, 30);
             this.grpCycleWinFinalStreak.TabIndex = 10;
             this.grpCycleWinFinalStreak.TabStop = false;
             // 
             // chkOnlyShowFinalStreak
             // 
             this.chkOnlyShowFinalStreak.AutoSize = true;
-            this.chkOnlyShowFinalStreak.Location = new System.Drawing.Point(259, 9);
+            this.chkOnlyShowFinalStreak.Location = new System.Drawing.Point(278, 8);
             this.chkOnlyShowFinalStreak.Name = "chkOnlyShowFinalStreak";
             this.chkOnlyShowFinalStreak.Size = new System.Drawing.Size(112, 16);
             this.chkOnlyShowFinalStreak.TabIndex = 2;
@@ -492,7 +492,7 @@
             // chkOnlyShowWinStreak
             // 
             this.chkOnlyShowWinStreak.AutoSize = true;
-            this.chkOnlyShowWinStreak.Location = new System.Drawing.Point(151, 9);
+            this.chkOnlyShowWinStreak.Location = new System.Drawing.Point(169, 8);
             this.chkOnlyShowWinStreak.Name = "chkOnlyShowWinStreak";
             this.chkOnlyShowWinStreak.Size = new System.Drawing.Size(68, 16);
             this.chkOnlyShowWinStreak.TabIndex = 1;
@@ -523,14 +523,14 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(369, 30);
+            this.groupBox1.Size = new System.Drawing.Size(390, 30);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             // 
             // chkOnlyShowPing
             // 
             this.chkOnlyShowPing.AutoSize = true;
-            this.chkOnlyShowPing.Location = new System.Drawing.Point(259, 9);
+            this.chkOnlyShowPing.Location = new System.Drawing.Point(278, 9);
             this.chkOnlyShowPing.Name = "chkOnlyShowPing";
             this.chkOnlyShowPing.Size = new System.Drawing.Size(66, 16);
             this.chkOnlyShowPing.TabIndex = 2;
@@ -540,7 +540,7 @@
             // chkOnlyShowPlayers
             // 
             this.chkOnlyShowPlayers.AutoSize = true;
-            this.chkOnlyShowPlayers.Location = new System.Drawing.Point(151, 9);
+            this.chkOnlyShowPlayers.Location = new System.Drawing.Point(169, 8);
             this.chkOnlyShowPlayers.Name = "chkOnlyShowPlayers";
             this.chkOnlyShowPlayers.Size = new System.Drawing.Size(103, 16);
             this.chkOnlyShowPlayers.TabIndex = 1;
@@ -609,14 +609,13 @@
             this.lblOverlayFontExample.Name = "lblOverlayFontExample";
             this.lblOverlayFontExample.Size = new System.Drawing.Size(509, 31);
             this.lblOverlayFontExample.TabIndex = 0;
-            this.lblOverlayFontExample.Text = "Round 3: Freezy Peak";
+            this.lblOverlayFontExample.Text = "ラウンド 3: スライムクライム";
             this.lblOverlayFontExample.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // grpStats
             // 
             this.grpStats.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpStats.Controls.Add(this.chkChangeHoopsieLegends);
             this.grpStats.Controls.Add(this.chkAutoUpdate);
             this.grpStats.Controls.Add(this.lblPreviousWinsNote);
             this.grpStats.Controls.Add(this.lblPreviousWins);
@@ -629,24 +628,14 @@
             this.grpStats.Text = "情報";
             this.grpStats.Enter += new System.EventHandler(this.grpStats_Enter);
             // 
-            // chkChangeHoopsieLegends
-            // 
-            this.chkChangeHoopsieLegends.AutoSize = true;
-            this.chkChangeHoopsieLegends.Location = new System.Drawing.Point(390, 19);
-            this.chkChangeHoopsieLegends.Name = "chkChangeHoopsieLegends";
-            this.chkChangeHoopsieLegends.Size = new System.Drawing.Size(255, 16);
-            this.chkChangeHoopsieLegends.TabIndex = 4;
-            this.chkChangeHoopsieLegends.Text = "Rename Hoopsie Legends to Hoopsie Heroes";
-            this.chkChangeHoopsieLegends.UseVisualStyleBackColor = true;
-            // 
             // chkAutoUpdate
             // 
             this.chkAutoUpdate.AutoSize = true;
             this.chkAutoUpdate.Location = new System.Drawing.Point(254, 19);
             this.chkAutoUpdate.Name = "chkAutoUpdate";
-            this.chkAutoUpdate.Size = new System.Drawing.Size(72, 16);
+            this.chkAutoUpdate.Size = new System.Drawing.Size(134, 16);
             this.chkAutoUpdate.TabIndex = 3;
-            this.chkAutoUpdate.Text = "自動更新";
+            this.chkAutoUpdate.Text = "自動アップデートを許可";
             this.chkAutoUpdate.UseVisualStyleBackColor = true;
             // 
             // lblPreviousWinsNote
@@ -655,18 +644,19 @@
             this.lblPreviousWinsNote.ForeColor = System.Drawing.Color.DimGray;
             this.lblPreviousWinsNote.Location = new System.Drawing.Point(133, 20);
             this.lblPreviousWinsNote.Name = "lblPreviousWinsNote";
-            this.lblPreviousWinsNote.Size = new System.Drawing.Size(118, 12);
+            this.lblPreviousWinsNote.Size = new System.Drawing.Size(91, 12);
             this.lblPreviousWinsNote.TabIndex = 2;
-            this.lblPreviousWinsNote.Text = "(Before using tracker)";
+            this.lblPreviousWinsNote.Text = "(トラッカー使用前)";
             // 
             // lblPreviousWins
             // 
             this.lblPreviousWins.AutoSize = true;
             this.lblPreviousWins.Location = new System.Drawing.Point(11, 20);
             this.lblPreviousWins.Name = "lblPreviousWins";
-            this.lblPreviousWins.Size = new System.Drawing.Size(77, 12);
+            this.lblPreviousWins.Size = new System.Drawing.Size(63, 12);
             this.lblPreviousWins.TabIndex = 0;
-            this.lblPreviousWins.Text = "Previous Wins";
+            this.lblPreviousWins.Text = "過去の勝率";
+            this.lblPreviousWins.Click += new System.EventHandler(this.lblPreviousWins_Click);
             // 
             // txtPreviousWins
             // 
@@ -753,10 +743,11 @@
             this.chkIgnoreLevelTypeWhenSorting.Location = new System.Drawing.Point(16, 18);
             this.chkIgnoreLevelTypeWhenSorting.Margin = new System.Windows.Forms.Padding(2);
             this.chkIgnoreLevelTypeWhenSorting.Name = "chkIgnoreLevelTypeWhenSorting";
-            this.chkIgnoreLevelTypeWhenSorting.Size = new System.Drawing.Size(184, 16);
+            this.chkIgnoreLevelTypeWhenSorting.Size = new System.Drawing.Size(188, 16);
             this.chkIgnoreLevelTypeWhenSorting.TabIndex = 0;
-            this.chkIgnoreLevelTypeWhenSorting.Text = "Ignore Level Type when sorting";
+            this.chkIgnoreLevelTypeWhenSorting.Text = "ソート時にステージタイプを無視する";
             this.chkIgnoreLevelTypeWhenSorting.UseVisualStyleBackColor = true;
+            this.chkIgnoreLevelTypeWhenSorting.CheckedChanged += new System.EventHandler(this.chkIgnoreLevelTypeWhenSorting_CheckedChanged);
             // 
             // btnCancel
             // 
@@ -794,7 +785,7 @@
             this.Name = "Settings";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Settings";
+            this.Text = "設定";
             this.Load += new System.EventHandler(this.Settings_Load);
             this.grpOverlay.ResumeLayout(false);
             this.grpOverlay.PerformLayout();
@@ -848,7 +839,6 @@
         private System.Windows.Forms.CheckBox chkFlipped;
         private System.Windows.Forms.CheckBox chkHideWinsInfo;
         private System.Windows.Forms.CheckBox chkHidePercentages;
-        private System.Windows.Forms.CheckBox chkChangeHoopsieLegends;
         private System.Windows.Forms.GroupBox grpGameOptions;
         private System.Windows.Forms.Label lblGameExeLocation;
         private System.Windows.Forms.TextBox txtGameExeLocation;
