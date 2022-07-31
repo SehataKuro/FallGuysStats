@@ -341,7 +341,7 @@
             // chkHideRoundInfo
             // 
             this.chkHideRoundInfo.AutoSize = true;
-            this.chkHideRoundInfo.Location = new System.Drawing.Point(16, 41);
+            this.chkHideRoundInfo.Location = new System.Drawing.Point(158, 139);
             this.chkHideRoundInfo.Name = "chkHideRoundInfo";
             this.chkHideRoundInfo.Size = new System.Drawing.Size(114, 16);
             this.chkHideRoundInfo.TabIndex = 1;
