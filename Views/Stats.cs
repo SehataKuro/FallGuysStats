@@ -1516,7 +1516,7 @@ namespace FallGuysStats {
                     Version newVersion = new Version(assemblyInfo.Substring(index + 17, indexEnd - index - 17));
                     if (newVersion > Assembly.GetEntryAssembly().GetName().Version) {
                         if (silent || MessageBox.Show(this, $"There is a new version of Fall Guy Stats available (v{newVersion.ToString(2)}). Do you wish to update now?", "Update Program", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK) {
-                            byte[] data = web.DownloadData($"https://raw.githubusercontent.com/SehataKuro/FallGuysStatsJP/master/FallGuyStats.zip");
+                            byte[] data = web.DownloadData($"https://raw.githubusercontent.com/SehataKuro/FallGuysStatsJP/master/FallGuyStatsJP.zip");
                             string exeName = null;
                             using (MemoryStream ms = new MemoryStream(data)) {
                                 using (ZipArchive zipFile = new ZipArchive(ms, ZipArchiveMode.Read)) {
