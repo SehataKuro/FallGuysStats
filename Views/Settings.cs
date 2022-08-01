@@ -13,7 +13,7 @@ namespace FallGuysStats {
             InitializeComponent();
 
             CustomFonts = new PrivateFontCollection();
-            CustomFonts.AddFontFile("TitanOne-Regular.ttf");
+            CustomFonts.AddFontFile("MochiyPopOne-Regular.ttf");
         }
         private void Settings_Load(object sender, EventArgs e) {
             txtLogPath.Text = CurrentSettings.LogPath;

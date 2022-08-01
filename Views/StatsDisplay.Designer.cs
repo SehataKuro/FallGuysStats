@@ -24,12 +24,45 @@
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StatsDisplay));
-            this.graph = new FallGuysStats.Graph();
             this.chkWins = new System.Windows.Forms.CheckBox();
             this.chkFinals = new System.Windows.Forms.CheckBox();
             this.chkShows = new System.Windows.Forms.CheckBox();
+            this.graph = new FallGuysStats.Graph();
             ((System.ComponentModel.ISupportInitialize)(this.graph)).BeginInit();
             this.SuspendLayout();
+            // 
+            // chkWins
+            // 
+            this.chkWins.AutoSize = true;
+            this.chkWins.Location = new System.Drawing.Point(12, 12);
+            this.chkWins.Name = "chkWins";
+            this.chkWins.Size = new System.Drawing.Size(48, 16);
+            this.chkWins.TabIndex = 1;
+            this.chkWins.Text = "勝利";
+            this.chkWins.UseVisualStyleBackColor = true;
+            this.chkWins.CheckedChanged += new System.EventHandler(this.chkWins_CheckedChanged);
+            // 
+            // chkFinals
+            // 
+            this.chkFinals.AutoSize = true;
+            this.chkFinals.Location = new System.Drawing.Point(68, 11);
+            this.chkFinals.Name = "chkFinals";
+            this.chkFinals.Size = new System.Drawing.Size(68, 16);
+            this.chkFinals.TabIndex = 2;
+            this.chkFinals.Text = "ファイナル";
+            this.chkFinals.UseVisualStyleBackColor = true;
+            this.chkFinals.CheckedChanged += new System.EventHandler(this.chkFinals_CheckedChanged);
+            // 
+            // chkShows
+            // 
+            this.chkShows.AutoSize = true;
+            this.chkShows.Location = new System.Drawing.Point(142, 11);
+            this.chkShows.Name = "chkShows";
+            this.chkShows.Size = new System.Drawing.Size(50, 16);
+            this.chkShows.TabIndex = 3;
+            this.chkShows.Text = "ショー";
+            this.chkShows.UseVisualStyleBackColor = true;
+            this.chkShows.CheckedChanged += new System.EventHandler(this.chkShows_CheckedChanged);
             // 
             // graph
             // 
@@ -47,39 +80,6 @@
             this.graph.TabIndex = 0;
             this.graph.TabStop = false;
             // 
-            // chkWins
-            // 
-            this.chkWins.AutoSize = true;
-            this.chkWins.Location = new System.Drawing.Point(12, 12);
-            this.chkWins.Name = "chkWins";
-            this.chkWins.Size = new System.Drawing.Size(48, 16);
-            this.chkWins.TabIndex = 1;
-            this.chkWins.Text = "Wins";
-            this.chkWins.UseVisualStyleBackColor = true;
-            this.chkWins.CheckedChanged += new System.EventHandler(this.chkWins_CheckedChanged);
-            // 
-            // chkFinals
-            // 
-            this.chkFinals.AutoSize = true;
-            this.chkFinals.Location = new System.Drawing.Point(68, 12);
-            this.chkFinals.Name = "chkFinals";
-            this.chkFinals.Size = new System.Drawing.Size(55, 16);
-            this.chkFinals.TabIndex = 2;
-            this.chkFinals.Text = "Finals";
-            this.chkFinals.UseVisualStyleBackColor = true;
-            this.chkFinals.CheckedChanged += new System.EventHandler(this.chkFinals_CheckedChanged);
-            // 
-            // chkShows
-            // 
-            this.chkShows.AutoSize = true;
-            this.chkShows.Location = new System.Drawing.Point(127, 12);
-            this.chkShows.Name = "chkShows";
-            this.chkShows.Size = new System.Drawing.Size(57, 16);
-            this.chkShows.TabIndex = 3;
-            this.chkShows.Text = "Shows";
-            this.chkShows.UseVisualStyleBackColor = true;
-            this.chkShows.CheckedChanged += new System.EventHandler(this.chkShows_CheckedChanged);
-            // 
             // StatsDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -96,7 +96,7 @@
             this.Name = "StatsDisplay";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Stats Display";
+            this.Text = "統計グラフ";
             this.Load += new System.EventHandler(this.StatsDisplay_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.StatsDisplay_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.graph)).EndInit();

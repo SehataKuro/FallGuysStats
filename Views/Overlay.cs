@@ -32,17 +32,17 @@ namespace FallGuysStats {
         private bool startedPlaying;
         private DateTime startTime;
         static Overlay() {
-            if (!File.Exists("TitanOne-Regular.ttf")) {
-                using (Stream fontStream = typeof(Overlay).Assembly.GetManifestResourceStream("FallGuysStats.Resources.TitanOne-Regular.ttf")) {
+            if (!File.Exists("MochiyPopOne-Regular.ttf")) {
+                using (Stream fontStream = typeof(Overlay).Assembly.GetManifestResourceStream("FallGuysStats.Resources.MochiyPopOne-Regular.ttf")) {
                     byte[] fontdata = new byte[fontStream.Length];
                     fontStream.Read(fontdata, 0, (int)fontStream.Length);
-                    File.WriteAllBytes("TitanOne-Regular.ttf", fontdata);
+                    File.WriteAllBytes("MochiyPopOne-Regular.ttf", fontdata);
                 }
             }
 
             CustomFont = new PrivateFontCollection();
-            CustomFont.AddFontFile("TitanOne-Regular.ttf");
-            GlobalFont = new Font(CustomFont.Families[0], 18, FontStyle.Regular, GraphicsUnit.Pixel);
+            CustomFont.AddFontFile("MochiyPopOne-Regular.ttf");
+            GlobalFont = new Font(CustomFont.Families[0], 12, FontStyle.Regular, GraphicsUnit.Pixel);
         }
         public Overlay() {
             InitializeComponent();
@@ -138,13 +138,13 @@ namespace FallGuysStats {
             string qualifyChanceDisplay;
             switch (qualifySwitchCount % 2) {
                 case 0:
-                    lblQualifyChance.Text = "通過:";
+                    lblQualifyChance.Text = "クリア:";
                     qualifyChance = levelInfo.TotalQualify * 100f / (levelInfo.TotalPlays == 0 ? 1 : levelInfo.TotalPlays);
                     qualifyChanceDisplay = StatsForm.CurrentSettings.HideOverlayPercentages ? string.Empty : $" - {qualifyChance:0.0}%";
                     lblQualifyChance.TextRight = $"{levelInfo.TotalQualify} / {levelInfo.TotalPlays}{qualifyChanceDisplay}";
                     break;
                 case 1:
-                    lblQualifyChance.Text = "ゴールド:";
+                    lblQualifyChance.Text = "1位:";
                     qualifyChance = levelInfo.TotalGolds * 100f / (levelInfo.TotalPlays == 0 ? 1 : levelInfo.TotalPlays);
                     qualifyChanceDisplay = StatsForm.CurrentSettings.HideOverlayPercentages ? string.Empty : $" - {qualifyChance:0.0}%";
                     lblQualifyChance.TextRight = $"{levelInfo.TotalGolds} / {levelInfo.TotalPlays}{qualifyChanceDisplay}";
