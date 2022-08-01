@@ -20,19 +20,16 @@ Simple program to generate stats for the game Fall Guys. Reads the games log fil
   - Run the program while playing Fall Guys to see new stats.
   - Only updates after a show has been completed and results are given.
 
-![Fall Guys Stats](https://raw.githubusercontent.com/ShootMe/FallGuysStats/master/Properties/mainWindow.png)
+![Fall Guys Stats](https://raw.githubusercontent.com/SehataKuro/FallGuysStatsJP/master/Properties/mainWindow.png)
 
-![Fall Guys Level Stats](https://raw.githubusercontent.com/ShootMe/FallGuysStats/master/Properties/levelWindow.png)
 
 ## Overlay
-![Overlay](https://raw.githubusercontent.com/ShootMe/FallGuysStats/master/Properties/overlay.png)
+![Overlay](https://raw.githubusercontent.com/SehataKuro/FallGuysStatsJP/master/Properties/overlay.png)
 
   - Hit 'T' to toggle background colors
   - Hit 'F' to flip the Display
 
 ## Deleting Shows
-![Shows](https://raw.githubusercontent.com/ShootMe/FallGuysStats/master/Properties/showsWindow.png)
-
   - Click the blue Shows label on the main screen
   - Highlight any number of shows and hit the 'DEL' key
 
