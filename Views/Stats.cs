@@ -65,7 +65,7 @@ namespace FallGuysStats {
         public Stats() {
             InitializeComponent();
 
-            Text = $"Fall Guys Stats v{Assembly.GetExecutingAssembly().GetName().Version.ToString(2)}";
+            Text = $"Fall Guys Stats JP v{Assembly.GetExecutingAssembly().GetName().Version.ToString(2)}";
             textInfo = Thread.CurrentThread.CurrentCulture.TextInfo;
 
             logFile.OnParsedLogLines += LogFile_OnParsedLogLines;
@@ -730,7 +730,7 @@ namespace FallGuysStats {
 
                             if (info == null && stat.Start > lastAddedShow) {
                                 if (stat.ShowEnd < startupTime && askedPreviousShows == 0) {
-                                    if (MessageBox.Show(this, "There are previous shows not in your current stats. Do you wish to add these to your stats?", "Previous Shows", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
+                                    if (MessageBox.Show(this, "現在の統計に含まれていない過去のショーがあります。これらを統計に追加しますか?", "過去の統計", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
                                         askedPreviousShows = 1;
                                     } else {
                                         askedPreviousShows = 2;
@@ -973,13 +973,13 @@ namespace FallGuysStats {
         }
         private void UpdateTotals() {
             try {
-                lblTotalRounds.Text = $"Rounds: {Rounds}";
-                lblTotalShows.Text = $"Shows: {Shows}";
-                lblTotalTime.Text = $"Time Played: {(int)Duration.TotalHours}:{Duration:mm\\:ss}";
+                lblTotalRounds.Text = $"ラウンド: {Rounds}";
+                lblTotalShows.Text = $"ショー: {Shows}";
+                lblTotalTime.Text = $"プレイ時間: {(int)Duration.TotalHours}:{Duration:mm\\:ss}";
                 float winChance = (float)Wins * 100 / (Shows == 0 ? 1 : Shows);
-                lblTotalWins.Text = $"Wins: {Wins} ({winChance:0.0} %)";
+                lblTotalWins.Text = $"勝利: {Wins} ({winChance:0.0} %)";
                 float finalChance = (float)Finals * 100 / (Shows == 0 ? 1 : Shows);
-                lblTotalFinals.Text = $"Finals: {Finals} ({finalChance:0.0} %)";
+                lblTotalFinals.Text = $"ファイナル: {Finals} ({finalChance:0.0} %)";
                 lblKudos.Text = $"Kudos: {Kudos}";
                 gridDetails.Refresh();
             } catch (Exception ex) {
@@ -993,16 +993,16 @@ namespace FallGuysStats {
 
                 gridDetails.Columns["AveKudos"].Visible = false;
                 gridDetails.Columns["AveDuration"].Visible = false;
-                gridDetails.Setup("Name", pos++, 0, "Level Name", DataGridViewContentAlignment.MiddleLeft);
-                gridDetails.Setup("Played", pos++, 55, "Played", DataGridViewContentAlignment.MiddleRight);
-                gridDetails.Setup("Qualified", pos++, 65, "Qualified", DataGridViewContentAlignment.MiddleRight);
-                gridDetails.Setup("Gold", pos++, 50, "Gold", DataGridViewContentAlignment.MiddleRight);
-                gridDetails.Setup("Silver", pos++, 50, "Silver", DataGridViewContentAlignment.MiddleRight);
-                gridDetails.Setup("Bronze", pos++, 50, "Bronze", DataGridViewContentAlignment.MiddleRight);
+                gridDetails.Setup("Name", pos++, 0, "ステージ", DataGridViewContentAlignment.MiddleLeft);
+                gridDetails.Setup("Played", pos++, 55, "回数", DataGridViewContentAlignment.MiddleRight);
+                gridDetails.Setup("Qualified", pos++, 65, "クリア", DataGridViewContentAlignment.MiddleRight);
+                gridDetails.Setup("Gold", pos++, 50, "ゴールド", DataGridViewContentAlignment.MiddleRight);
+                gridDetails.Setup("Silver", pos++, 50, "シルバー", DataGridViewContentAlignment.MiddleRight);
+                gridDetails.Setup("Bronze", pos++, 50, "ブロンズ", DataGridViewContentAlignment.MiddleRight);
                 gridDetails.Setup("Kudos", pos++, 60, "Kudos", DataGridViewContentAlignment.MiddleRight);
-                gridDetails.Setup("Fastest", pos++, 60, "Fastest", DataGridViewContentAlignment.MiddleRight);
-                gridDetails.Setup("Longest", pos++, 60, "Longest", DataGridViewContentAlignment.MiddleRight);
-                gridDetails.Setup("AveFinish", pos++, 60, "Average", DataGridViewContentAlignment.MiddleRight);
+                gridDetails.Setup("Fastest", pos++, 60, "最速", DataGridViewContentAlignment.MiddleRight);
+                gridDetails.Setup("Longest", pos++, 60, "最遅", DataGridViewContentAlignment.MiddleRight);
+                gridDetails.Setup("AveFinish", pos++, 60, "平均", DataGridViewContentAlignment.MiddleRight);
             } catch (Exception ex) {
                 MessageBox.Show(this, ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -1252,7 +1252,7 @@ namespace FallGuysStats {
             }
             rounds.Sort();
 
-            using (StatsDisplay display = new StatsDisplay() { Text = "Wins Per Day" }) {
+            using (StatsDisplay display = new StatsDisplay() { Text = "一日あたりの勝利数" }) {
                 DataTable dt = new DataTable();
                 dt.Columns.Add("Date", typeof(DateTime));
                 dt.Columns.Add("Wins", typeof(int));

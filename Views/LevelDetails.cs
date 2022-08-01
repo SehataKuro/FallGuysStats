@@ -14,19 +14,19 @@ namespace FallGuysStats {
 
         private void LevelDetails_Load(object sender, System.EventArgs e) {
             if (LevelName == "Shows") {
-                Text = $"Show Stats";
+                Text = $"ショー統計";
                 ShowStats = 2;
                 ClientSize = new Size(Width - 200, Height);
             } else if (LevelName == "Rounds") {
-                Text = $"Round Stats";
+                Text = $"ラウンド統計";
                 ShowStats = 1;
                 ClientSize = new Size(Width + 85, Height);
             } else if (LevelName == "Finals") {
-                Text = $"Final Stats";
+                Text = $"ファイナル統計";
                 ShowStats = 1;
                 ClientSize = new Size(Width + 85, Height);
             } else {
-                Text = $"Level Stats - {LevelName}";
+                Text = $"ステージ統計 - {LevelName}";
             }
 
             gridDetails.DataSource = RoundDetails;
@@ -45,32 +45,32 @@ namespace FallGuysStats {
             gridDetails.Columns.Add(new DataGridViewImageColumn() { Name = "Medal", ImageLayout = DataGridViewImageCellLayout.Zoom, ToolTipText = "Medal" });
             gridDetails.Setup("Medal", pos++, 24, "", DataGridViewContentAlignment.MiddleCenter);
             if (ShowStats == 2) {
-                gridDetails.Setup("IsFinal", pos++, 40, "Final", DataGridViewContentAlignment.MiddleCenter);
+                gridDetails.Setup("IsFinal", pos++, 40, "ファイナル", DataGridViewContentAlignment.MiddleCenter);
             } else {
                 gridDetails.Columns["IsFinal"].Visible = false;
             }
-            gridDetails.Setup("ShowID", pos++, 0, "Show", DataGridViewContentAlignment.MiddleRight);
-            gridDetails.Setup("Round", pos++, 50, ShowStats == 2 ? "Rounds" : "Round", DataGridViewContentAlignment.MiddleRight);
+            gridDetails.Setup("ShowID", pos++, 0, "ショー", DataGridViewContentAlignment.MiddleRight);
+            gridDetails.Setup("Round", pos++, 50, ShowStats == 2 ? "ラウンド" : "ラウンド", DataGridViewContentAlignment.MiddleRight);
             if (ShowStats == 1) {
-                gridDetails.Setup("Name", pos++, 105, "Level", DataGridViewContentAlignment.MiddleLeft);
+                gridDetails.Setup("Name", pos++, 105, "ステージ", DataGridViewContentAlignment.MiddleLeft);
             } else {
                 gridDetails.Columns["Name"].Visible = false;
             }
             if (ShowStats != 2) {
-                gridDetails.Setup("Players", pos++, 60, "Players", DataGridViewContentAlignment.MiddleRight);
+                gridDetails.Setup("Players", pos++, 60, "人数", DataGridViewContentAlignment.MiddleRight);
             } else {
                 gridDetails.Columns["Players"].Visible = false;
             }
-            gridDetails.Setup("Start", pos++, 105, "Start", DataGridViewContentAlignment.MiddleCenter);
-            gridDetails.Setup("End", pos++, 60, "Duration", DataGridViewContentAlignment.MiddleCenter);
+            gridDetails.Setup("Start", pos++, 105, "スタート", DataGridViewContentAlignment.MiddleCenter);
+            gridDetails.Setup("End", pos++, 60, "間隔", DataGridViewContentAlignment.MiddleCenter);
             if (ShowStats != 2) {
-                gridDetails.Setup("Finish", pos++, 60, "Finish", DataGridViewContentAlignment.MiddleCenter);
+                gridDetails.Setup("Finish", pos++, 60, "ゴール", DataGridViewContentAlignment.MiddleCenter);
             } else {
                 gridDetails.Columns["Finish"].Visible = false;
             }
             if (ShowStats != 2) {
-                gridDetails.Setup("Position", pos++, 60, "Position", DataGridViewContentAlignment.MiddleRight);
-                gridDetails.Setup("Score", pos++, 60, "Score", DataGridViewContentAlignment.MiddleRight);
+                gridDetails.Setup("Position", pos++, 60, "ポジション", DataGridViewContentAlignment.MiddleRight);
+                gridDetails.Setup("Score", pos++, 60, "スコア", DataGridViewContentAlignment.MiddleRight);
             } else {
                 gridDetails.Columns["Position"].Visible = false;
                 gridDetails.Columns["Score"].Visible = false;
